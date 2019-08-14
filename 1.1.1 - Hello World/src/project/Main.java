@@ -1,6 +1,6 @@
 package project;
 
-//++++++++
+//+++++++++++++++++++++
 //
 //Hello World Program
 //
@@ -9,7 +9,7 @@ package project;
 //@VersionLog: 
 //08-13-2019 11:13
 //
-//++++++++
+//+++++++++++++++++++++
 
 public class Main {
 	public static void main(String args[]) {
