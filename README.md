@@ -2,4 +2,4 @@
 AP CSA ClassWork files code
 
 Errors are subjected to occur. Do not rely on present code completely.
-Use at your own rist; Author is not responsible for any trouble that may occur.
+Use at your own risk; Author is not responsible for any trouble that may occur.
