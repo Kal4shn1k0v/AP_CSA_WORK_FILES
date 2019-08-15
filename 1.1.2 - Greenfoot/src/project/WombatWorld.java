@@ -1,3 +1,4 @@
+package project;
 import greenfoot.*;  // imports Actor, World, Greenfoot, GreenfootImage
 
 /**
