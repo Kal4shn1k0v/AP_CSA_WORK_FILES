@@ -1,12 +1,18 @@
 package project;
 import greenfoot.*;  // imports Actor, World, Greenfoot, GreenfootImage
 
-/**
- * A world where wombats live.
- * 
- * @author Michael Kölling
- * @version 2.0
- */
+//++++++++++++++++++++++
+//
+//Greenfoot program
+//
+//@Author: Daniel Zhang
+//@ProjectNum: 1.1.2
+//@FileDesc: World - A world where wombats live.
+//@VersionLog: 
+//08-13-2019 11:13
+//
+//++++++++++++++++++++++
+
 public class WombatWorld extends World
 {
     /**

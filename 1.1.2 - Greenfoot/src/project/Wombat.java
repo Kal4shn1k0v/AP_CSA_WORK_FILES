@@ -1,13 +1,18 @@
 package project;
 import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
 
-/**
- * Wombat. A Wombat moves forward until it hits the edge of the world, at
- * which point it turns left. If a wombat finds a leaf, it eats it.
- * 
- * @author Michael Kölling
- * @version 2.0
- */
+//++++++++++++++++++++++
+//
+//Greenfoot program
+//
+//@Author: Daniel Zhang
+//@ProjectNum: 1.1.2
+//@FileDesc: Wonbat - A Wombat moves forward until it hits the edge of the world, at which point it turns left. If a wombat finds a leaf, it eats it.
+//@VersionLog: 
+//08-13-2019 11:13
+//
+//++++++++++++++++++++++
+
 public class Wombat extends Actor
 {
     private int leavesEaten;
