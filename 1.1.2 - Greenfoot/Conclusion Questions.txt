@@ -1,0 +1,44 @@
+Daniel Zhang 
+Period 4 
+
+CONLUSION QUESTIONS 1.1.2
+
+1). What is an IDE? What are the three parts of the Greenfoot IDE?
+>   An IDE is a type of software that contains a text editor and can write, run, and test software. 
+
+2). Look at class diagram to answer: 
+
+	A). What is the superclass that Space belongs to?
+	>   The superclass that Space belongs in is World.
+
+	B). What superclasses does Bullet belong to?
+	>   Bullet belong to the superclass Mover
+	
+	C). What are the three subclasses of Mover?
+	>   The three subclasses of Mover are Bullet, Asteroid, and Rocket.
+	
+	D). Which classes have no superclass?
+	>   Class Vector has no superclass.
+	
+	E). What classes are inheriting the methods of the Actor class?
+	>	Classes that are inheriting the methods of the Actor class are Mover and Explosion.
+	
+3). Look at referenced method to answer:
+
+	A). Which methods return something?
+	>	Methods that return something are createStars(), as they display the result.
+
+	B). Which methods have parameters, how many, and what are they?
+	>	Method setLocation and createStars() have parameters. For setLocation is the x and y locations. For setLocaation is the actual location.
+
+	C). Which of these are like asking questions and which are like giving commands? Why?
+	>	The ones asking questions are getStability(), and the ones giving commands are createStars().
+
+	D). If I type setLocation(2.5, 3.5) what are my arguments?
+	>	The arguments would be the set of x and y coordinates.
+
+4). What does the act() method do in Greenfoot? What does the Act button do? How do they differ?
+>	The act() method in Greenfoot defines what the actor the method it is in does.
+
+5). What does the Run button do in Greenfoot?
+>	The run button runs the main file and the entire program.

@@ -1,0 +1,32 @@
+Daniel Zhang 
+Period 4 
+
+CONLUSION QUESTIONS 1.1.3
+
+1).	Look at code to answer:
+
+	A).	What is the name of the class? What is its superclass?
+	>	
+	
+	B).	What does the keyword extends do for this class?
+	>	
+	
+	C).	How many methods are pictured? What are their names and parameters?
+	>	
+	
+	D). What is the access modifier for the classes and methods pictured? What does this access modifier mean?
+	>	
+	
+2).	Look at code to answer:
+	
+	A).	What is the conditional for the if statement? What is a value of stability that would cause the if structure to be skipped?
+	>	
+	
+	B).	What is the parameter of the hit() method? What does it return?
+	>	
+	
+3).	If I want to call the Greenfoot class method isKeyDown() into my Crab class, how would I do it? What if I wanted to call moveAround() from an instance of the Lobster class called lobster?
+>	
+
+4).	What keyword is used in a method signature to enable access from outside objects? What keyword is used to show that a method belongs to a class and not an instance of the class (prevent inheritance of the method by an instance)?
+>		
