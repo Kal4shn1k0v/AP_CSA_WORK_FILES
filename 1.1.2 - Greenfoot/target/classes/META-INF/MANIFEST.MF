@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: danie
+Build-Jdk: 12.0.2
+Main-Class: $main-class$
+Created-By: Maven Integration for Eclipse
+
