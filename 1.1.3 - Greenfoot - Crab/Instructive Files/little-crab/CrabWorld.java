@@ -1,4 +1,3 @@
-package project;
 import greenfoot.*;  // (Actor, World, Greenfoot, GreenfootImage)
 
 public class CrabWorld extends World
