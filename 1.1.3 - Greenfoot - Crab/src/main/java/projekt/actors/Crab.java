@@ -5,22 +5,24 @@ import greenfoot.*;
 /**
  * This class defines a crab. Crabs live on the beach.
  */
+
 public class Crab extends Actor
 {
     public Crab() {
         getImage().scale(50,50);
     }
+
     public void act() {
         if (Greenfoot.isKeyDown("w")) {
-            setLocation(getX(), getY() - 2);
+            move(4);
         } else if (Greenfoot.isKeyDown("s")) {
-            setLocation(getX(), getY() + 2);
+            move(-4);
         }
 
         if (Greenfoot.isKeyDown("a")) {
-            setLocation(getX() - 2, getY());
+            turn(-3);
         } else if (Greenfoot.isKeyDown("d")) {
-            setLocation(getX() + 2, getY());
+            turn(3);
         }
     }
 }

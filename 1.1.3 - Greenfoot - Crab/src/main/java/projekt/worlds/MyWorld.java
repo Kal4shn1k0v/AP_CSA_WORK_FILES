@@ -4,6 +4,7 @@ import greenfoot.Greenfoot;
 import greenfoot.World;
 import projekt.DemoApp;
 import projekt.actors.Crab;
+import projekt.actors.Lobster;
 
 import java.util.Random;
 
@@ -11,6 +12,7 @@ import java.util.Random;
 public class MyWorld extends World {
 
     private Crab crab;
+    private Lobster lobster;
 
     public MyWorld() {
         super(1000, 1000, 1);
@@ -28,7 +30,7 @@ public class MyWorld extends World {
         int lobsterloop;
 
 
-
+        System.out.println(lobsterloopend);
         System.out.println(crabloopend);
 
         for (crabloop = 0; crabloop < crabloopend; crabloop++) {
@@ -49,8 +51,8 @@ public class MyWorld extends World {
             Random yrandint = new Random();
             int yrand = yrandint.nextInt((900 - 100) + 1) + 100;
 
-            crab = new Crab();
-            addObject(crab, xrand, yrand);
+            lobster = new Lobster();
+            addObject(lobster, xrand, yrand);
         }
     }
 }
