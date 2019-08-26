@@ -1,20 +1,35 @@
+/*
+    @author:
+    @version: 0.
+*/
+
 package projekt;
 
 import greenfoot.export.GreenfootScenarioApplication;
 
 import javax.swing.*;
 
+//Launches program
+
 public class DemoApp extends GreenfootScenarioApplication {
-    public static int crabnum;
+    public static int lobsternum;
+    public static int timeinterval;
 
     public static void main(String[] args) {
-        String num1 = JOptionPane.showInputDialog("Number of Crabs");
-        if ((num1 != null) && (num1.length() > 0)) {
+        //User input for # of lobsters.
+        String count = JOptionPane.showInputDialog("Number of Crabs");
+        if ((count != null) && (count.length() > 0)) {
             //System.exit(1);
         }
 
-        crabnum = Integer.parseInt(num1);
+        //User input for
 
+
+        //Sets global variable
+        lobsternum = Integer.parseInt(count);
+        timeinterval = 0;
+
+        //Launches program
         GreenfootScenarioApplication.launch(args);
     }
 }

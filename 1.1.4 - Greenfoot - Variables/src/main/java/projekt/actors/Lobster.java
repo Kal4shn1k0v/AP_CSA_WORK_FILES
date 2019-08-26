@@ -3,13 +3,13 @@ package projekt.actors;
 import greenfoot.Actor;
 import greenfoot.Greenfoot;
 
-public class Crab extends Actor {
+public class Lobster extends Actor {
     boolean istouching = false;
     int time = 1000000;
     int randomDirection = Greenfoot.getRandomNumber(2);
 
 
-    public Crab() {
+    public Lobster() {
         getImage().scale(50,50);
     }
 
@@ -20,16 +20,17 @@ public class Crab extends Actor {
             time++;
         }
 
-        //Random turns
+        //Turns
         if(randomDirection == 1) {
-            turn(Greenfoot.getRandomNumber(15));
+            turn(15);
             randomDirection = Greenfoot.getRandomNumber(2);
         }
         else {
-            turn(Greenfoot.getRandomNumber(-15));
+            turn(-15);
             randomDirection = Greenfoot.getRandomNumber(2);
         }
 
+        //Detects edge
         if(isAtEdge()) {
             turn(Greenfoot.getRandomNumber(180));
         }

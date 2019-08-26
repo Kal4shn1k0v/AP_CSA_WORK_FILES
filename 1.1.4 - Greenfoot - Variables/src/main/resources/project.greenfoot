@@ -1,6 +1,8 @@
 # Class definitions
-class.projekt.actors.Crab.image=crab.png
-class.projekt.actors.Crab.superclass=greenfoot.Actor
+class.projekt.actors.Lobster.image=Lobster.png
+class.projekt.actors.Lobster.superclass=greenfoot.Actor
+class.projekt.actors.Worm.image=worm.png
+class.projekt.actors.Worm.superclass=greenfoot.Actor
 class.projekt.actors.WallEast.image=east.png
 class.projekt.actors.WallEast.superclass=greenfoot.Actor
 class.projekt.actors.WallNorth.image=north.png
