@@ -12,6 +12,7 @@ import javax.swing.*;
 //Launches program
 
 public class DemoApp extends GreenfootScenarioApplication {
+    //Creates global variables.
     public static int lobsternum;
     public static int timeinterval;
 
