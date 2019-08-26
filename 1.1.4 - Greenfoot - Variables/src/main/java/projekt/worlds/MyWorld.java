@@ -35,10 +35,11 @@ public class MyWorld extends World {
         east = new WallEast();
         north = new WallNorth();
 
-        addObject(south, 1,1000);
-        addObject(north,1,1);
-        addObject(east,1,1);
-        addObject(west, 1000, 1);
+        //Walls are currently not working...
+        //addObject(south, 1,1000);
+        //addObject(north,1,1);
+        //addObject(east,1,1);
+        //addObject(west, 1000, 1);
 
         //create crabs
 
