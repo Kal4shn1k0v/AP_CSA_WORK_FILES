@@ -14,6 +14,7 @@ public class Lobster extends Actor {
     }
 
     public void act() {
+        //Moves
         move(4);
         if(time == 1000000) {
             setRotation(Greenfoot.getRandomNumber(90));

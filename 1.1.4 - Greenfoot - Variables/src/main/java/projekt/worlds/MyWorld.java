@@ -1,10 +1,14 @@
 package projekt.worlds;
 
+import greenfoot.Greenfoot;
 import greenfoot.World;
 import projekt.DemoApp;
 import projekt.actors.*;
 
+import java.util.Date;
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 
 //
 
@@ -18,9 +22,7 @@ public class MyWorld extends World {
     //Declare Actors
     private Lobster lobster;
     private Worm worm;
-
-    //Makes timer.
-    public static int timer = 0;
+    private Crab crab;
 
     //Creates world.
     public MyWorld() {
@@ -46,8 +48,7 @@ public class MyWorld extends World {
         //addObject(east,1,1);
         //addObject(west, 1000, 1);
 
-        //create crabs
-
+        //Create lobsters
         int lobsterloopend = DemoApp.lobsternum;
         int lobsterloop;
 
@@ -63,11 +64,34 @@ public class MyWorld extends World {
             addObject(lobster, xrand, yrand);
         }
 
-        //Adds worms.
-        //for () {
+        //Create crabs
+        int crabloopend = DemoApp.crabnum;
+        int crabloop;
 
-        //}
-        worm = new Worm();
-        addObject(worm, 500,500);
+        //Adds crabs in random X Y coordinates.
+        for (crabloop = 0; crabloop < crabloopend; crabloop++) {
+            Random xrandint3 = new Random();
+            int xrand3 = xrandint3.nextInt((900 - 100) + 1) + 100;
+                                    //CURRENTLY NOT USED.
+            Random yrandint3 = new Random();
+            int yrand3 = yrandint3.nextInt((900 - 100) + 1) + 100;
+
+            crab = new Crab();
+            addObject(crab, 500, 500);
+        }
+
+        //Create worms
+        int wormloopend = DemoApp.wormnum;
+        int wormloop;
+        for (wormloop = 0; wormloop < wormloopend; wormloop++) {
+            Random xrandint2 = new Random();
+            int xrand2 = xrandint2.nextInt((900 - 100) + 1) + 100;
+
+            Random yrandint2 = new Random();
+            int yrand2 = yrandint2.nextInt((900 - 100) + 1) + 100;
+
+            worm = new Worm();
+            addObject(worm, xrand2, yrand2);
+        }
     }
 }

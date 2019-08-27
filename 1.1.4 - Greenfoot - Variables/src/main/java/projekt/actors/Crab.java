@@ -1,24 +1,16 @@
 package projekt.actors;
 
 import greenfoot.Actor;
-import greenfoot.Greenfoot;
-import projekt.DemoApp;
 
-public class Worm extends Actor {
-    private boolean istouching;
-
-    public Worm() {
+public class Crab extends Actor {
+    public Crab() {
         getImage().scale(50,50);
     }
 
     public void act() {
-        if (isTouching(Crab.class)) {
+        if (isTouching(Lobster.class)) {
             System.out.println("Collision!");
             getWorld().removeObject(this);
         }
-    }
-
-    public void eat() {
-
     }
 }
