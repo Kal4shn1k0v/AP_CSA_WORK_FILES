@@ -1,0 +1,53 @@
+# Class definitions
+class.projekt.actors.Lobster.image=Lobster.png
+class.projekt.actors.Lobster.superclass=greenfoot.Actor
+class.projekt.actors.Crab.image=crab.png
+class.projekt.actors.Crab.superclass=greenfoot.Actor
+class.projekt.actors.Worm.image=worm.png
+class.projekt.actors.Worm.superclass=greenfoot.Actor
+class.projekt.actors.WallEast.image=east.png
+class.projekt.actors.WallEast.superclass=greenfoot.Actor
+class.projekt.actors.WallNorth.image=north.png
+class.projekt.actors.WallNorth.superclass=greenfoot.Actor
+class.projekt.actors.WallSouth.image=south.png
+class.projekt.actors.WallSouth.superclass=greenfoot.Actor
+class.projekt.actors.WallWest.image=west.png
+class.projekt.actors.WallWest.superclass=greenfoot.Actor
+class.projekt.worlds.MyWorld.image=sand.jpg
+class.projekt.worlds.MyWorld.superclass=greenfoot.World
+
+# Editor Settings
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+
+# Main Window Settings
+mainWindow.height=800
+mainWindow.width=850
+mainWindow.x=100
+mainWindow.y=100
+
+# Misc Project Settings
+package.numDependencies=0
+package.numTargets=1
+project.charset=UTF-8
+readme.height=58
+readme.name=@README
+readme.width=47
+readme.x=10
+readme.y=10
+
+# Target definitions (unknown use)
+target1.height=50
+target1.name=MyWorld
+target1.showInterface=false
+target1.type=ClassTarget
+target1.typeParameters=
+target1.width=80
+target1.x=0
+target1.y=0
+
+# Misc/Unknown
+version=3.0.0
+world.lastInstantiated=MyWorld
