@@ -1,10 +1,10 @@
 Daniel Zhang 
 Period 4 
 
-CONLUSION QUESTIONS 1.1.4
+CONLUSION QUESTIONS 1.1.5
 
-1). What is the syntax for a single-line comment? A multiline comment?
->   A single line comment can be created by making "//". A multiline comment can be created by making "/*" and "*/".
+1). What is variable scope? What is the main difference between an instance variable and a local scope variable?
+>
 
 2). What is a class diagram? What information can you get from it? Where is it in the Greenfoot IDE?
 >   A class diagram show the relation of all the classes in a project. It is on the right side in the Greenfoot IDE.
@@ -14,21 +14,3 @@ CONLUSION QUESTIONS 1.1.4
 
 4). If I want to know the location of every object around a crab, what method would I use (look in the Greenfoot API)? Write the line of code needed to call the method on object crab of class Crab.
 >   If the location of every object around a crab is needed, "Actor.getX()" and "Actor.getY()" would be used.
-
-5). What is a Javadoc? What does the @return tag do and where would I place it in the code?
->   A Javadoc is a instructional documentation allowing users to view usage of a function inside of an API.
-
-6). What is the difference between a primitive type and an object type? What are the eight primitive types and what do they contain?
->   The difference between a primitive abd an object type is
-
-7). Combine these lines into one:   int age; age = 12;
->   To combine, the line "int age = 12;" could be used.
-
-8). What is wrong with the following code and how would you correct it?  int crab = new Crab();
->   There is no need for the "int" data type.
-
-9). Write a variable declaration for isHungry that returns a boolean value. Write a variable declaration that will instantiate an object of class Button.
->   if (isHungry == true) {}
-
-10).Look at the following code: int r = 1; int s = 2; int t = 3; r = s; s = t; System.out.println(r,s); What would be printed?
->   The text "2,3" would be printed.
