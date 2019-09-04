@@ -22,9 +22,9 @@ public class Crab extends Actor {
             }  */
 
             getImage().scale(50,50);
-            Greenfoot.delay(1);
+            //Greenfoot.delay(1);
             getImage().scale(60,50);
-            Greenfoot.delay(1);
+            //1Greenfoot.delay(1);
         }
 
             move(4);
