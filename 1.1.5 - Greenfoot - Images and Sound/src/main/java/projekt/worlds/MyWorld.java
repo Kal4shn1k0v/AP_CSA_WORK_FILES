@@ -30,11 +30,17 @@ public class MyWorld extends World {
         prepare();
     }
 
+    //variables
+
+
     private void prepare() {
         addObjects();
     }
 
     private void addObjects() {
+        //set tickspeed
+        Greenfoot.setSpeed(35);
+
         //create walls
 
         south = new WallSouth();

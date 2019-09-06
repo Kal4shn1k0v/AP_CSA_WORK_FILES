@@ -5,33 +5,70 @@ import greenfoot.Greenfoot;
 import greenfoot.GreenfootImage;
 
 public class Crab extends Actor {
-    private GreenfootImage image1;
-    private GreenfootImage image2;
+    private GreenfootImage image1 = new GreenfootImage("crab1.png");
+    private GreenfootImage image2 = new GreenfootImage("crab2.png");
 
+    public static boolean anotherImage = false;
 
     public Crab() {
         getImage().scale(50,50);
     }
 
-    public void act() {
-        setImage(image1);
+    public void switchImage() {
+        if (getImage().equals(image1)) {
+            setImage (image2);
+        }
+        else {
+            setImage (image1);
+        }
+    }
 
+
+    //getWorld().addObject(new Worm(), Greenfoot.getRandomNumber(1000),Greenfoot.getRandomNumber(1000));
+
+    public void death() {
+
+    }
+
+    public void win() {
+
+    }
+
+    public void act() {
+        //switches images
+        switchImage();
+
+        //moves
         if (Greenfoot.isKeyDown("w")) {
-            setLocation(getX(), getY() - 4);
+            setLocation(getX(), getY() - 12);
         } else if (Greenfoot.isKeyDown("s")) {
-            setLocation(getX(), getY() + 4);
+            setLocation(getX(), getY() + 12);
         } else if (Greenfoot.isKeyDown("a")) {
-            setLocation(getX() - 4, getY());
+            setLocation(getX() - 12, getY());
         } else if (Greenfoot.isKeyDown("d")) {
-            setLocation(getX() + 4, getY());
+            setLocation(getX() + 12, getY());
         } else if (Greenfoot.isKeyDown("q")) {
             turn(-3);
         } else if (Greenfoot.isKeyDown("e")) {
             turn(3);
         }
 
+        if (Greenfoot.isKeyDown("a") && Greenfoot.isKeyDown("w")) {
+            setLocation(getX() - 12, getY() - 12);
+        } else if (Greenfoot.isKeyDown("w") && Greenfoot.isKeyDown("d")) {
+            setLocation(getX() + 12, getY() - 12);
+        } else if (Greenfoot.isKeyDown("d") && Greenfoot.isKeyDown("s")) {
+            setLocation(getX() + 12, getY() + 12);
+        } else if (Greenfoot.isKeyDown("s") && Greenfoot.isKeyDown("a")) {
+            setLocation(getX() - 12, getY() + 12);
+        }
+
+        if (Worm.wormsEaten >= 10) {
+            win();
+        }
+
         if (isTouching(Lobster.class)) {
-            System.out.println("Collision!");
+            death();
             getWorld().removeObject(this);
         }
     }
