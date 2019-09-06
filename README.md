@@ -3,9 +3,9 @@ AP CSA ClassWork files code
 
 Please note that:
 
->	All code is source.
->	Errors are subjected to occur. Do not rely on present code completely.
->	Please use at your own risk; Author is not responsible for any trouble or damage that may occur.
+>	All code is source.<br/>
+>	Errors are subjected to occur. Do not rely on present code completely.<br/>
+>	Please use at your own risk; Author is not responsible for any trouble or damage that may occur.<br/>
 
 CURRENT ACTIVE AND WORKING BRANCHES:
 
@@ -13,14 +13,14 @@ CURRENT ACTIVE AND WORKING BRANCHES:
 
 Requirements:
 
->	Maven;
->	Java JRE + JDK;
+>	Maven<br/>
+>	Java JRE + JDK<br/>
 >	An IDE; Preferrably INTELLIJ
 
 INSTRUCTIONS: Compile through console:
 
->	Make sure that JDK, JRE, Maven is correctly installed in system_variables inside PATH;
->	Run command prompt, set directory to 
+>	Make sure that JDK, JRE, Maven is correctly installed in system_variables inside PATH<br/>
+>	Run command prompt, set directory to install directory
 >	
 
 INSTRUCTIONS: Compile through INTELLIJ IDE:
