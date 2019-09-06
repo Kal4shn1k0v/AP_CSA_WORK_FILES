@@ -1,4 +1,4 @@
-# AP_CSA_WORK_FILES
+﻿# AP_CSA_WORK_FILES
 AP CSA ClassWork files code
 
 Please note that:
@@ -15,7 +15,7 @@ Requirements:
 
 >	Maven<br/>
 >	Java JRE + JDK<br/>
->	An IDE; Preferrably INTELLIJ
+>	An IDE *Preferrably INTELLIJ*
 
 INSTRUCTIONS: Compile through console:
 
@@ -23,7 +23,10 @@ INSTRUCTIONS: Compile through console:
 >	Run command prompt, set directory to install directory
 >	
 
-INSTRUCTIONS: Compile through INTELLIJ IDE:
+INSTRUCTIONS: Compile through IDE: *INTELLIJ is recommended*
 
->	Launch the IDE of your choice
->	
+>	Launch the IDE of your choice<br/>
+>	Open Run Configurations<br/>
+>	New Run Configuration → New... → Application<br/>
+>	Set Main Class as projekt.DemoApp<br/>
+>	Now the program can be compiled through IDE.
