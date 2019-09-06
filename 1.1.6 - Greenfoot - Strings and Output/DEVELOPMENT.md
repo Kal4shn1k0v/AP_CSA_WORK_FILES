@@ -24,12 +24,12 @@ Here you go:
 - `$package-artifact$` - The artifactId of your package identifier - `greenfoot-maven-demo`
 - `$project-name$` - The name of your project - `greenfoot-maven-demo`
 - `$main-class$` - The full identifier of the class containing the `main(String[] args)` method (including full 
-package name) - `io.lerk.demo.DemoApp`
+package name) - `DemoApp`
 - `$main-class-package$` - The package of the main class - `io.lerk.demo`
 - `$main-class-name$` - The name of your main class - `DemoApp`
 - `$main-class-path$` - The path to the main class relative from `src/main/java` - `io/lerk/demo`
 
-- `$world-class$` - The full identifier of the main World class - `io.lerk.demo.worlds.MyWorld`
+- `$world-class$` - The full identifier of the main World class - `MyWorld`
 - `$world-class-name$` - Only the name of the class - `MyWorld`
 - `$world-class-package$` - Only the package of the class - `io.lerk.demo.worlds`
 - `$world-class-path$` - The location of the world class relative to `src/main/java` - `io/lerk/demo/worlds`

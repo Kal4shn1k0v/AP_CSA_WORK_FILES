@@ -1,13 +1,6 @@
 # Class definitions
-class.io.lerk.demo.actors.Home.image=house.png
-class.io.lerk.demo.actors.Home.superclass=greenfoot.Actor
-class.io.lerk.demo.actors.Schnapp.image=schnapp.png
-class.io.lerk.demo.actors.Schnapp.superclass=greenfoot.Actor
-class.io.lerk.demo.actors.Text.image=text-empty.png
-class.io.lerk.demo.actors.Text.superclass=greenfoot.Actor
-class.io.lerk.demo.actors.Thug.image=thug.png
-class.io.lerk.demo.worlds.MyWorld.image=crumpled-paper.jpg
-class.io.lerk.demo.worlds.MyWorld.superclass=greenfoot.World
+class.projekt.worlds.MyWorld.image=nog.jpg
+class.projekt.worlds.MyWorld.superclass=greenfoot.World
 
 # Editor Settings
 editor.fx.0.height=0
@@ -33,7 +26,7 @@ readme.y=10
 
 # Target definitions (unknown use)
 target1.height=50
-target1.name=io.lerk.demo.worlds.MyWorld
+target1.name=MyWorld
 target1.showInterface=false
 target1.type=ClassTarget
 target1.typeParameters=
@@ -43,4 +36,4 @@ target1.y=0
 
 # Misc/Unknown
 version=3.0.0
-world.lastInstantiated=io.lerk.demo.worlds.MyWorld
+world.lastInstantiated=MyWorld
