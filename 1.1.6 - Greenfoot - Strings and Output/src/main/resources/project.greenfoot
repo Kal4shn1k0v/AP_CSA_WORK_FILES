@@ -1,6 +1,14 @@
 # Class definitions
-class.projekt.worlds.MyWorld.image=nog.jpg
+class.projekt.worlds.MyWorld.image=background.jpg
 class.projekt.worlds.MyWorld.superclass=greenfoot.World
+class.projekt.actors.Bacteria.image=bacteria.png
+class.projekt.actors.Bacteria.superclass=greenfoot.Actor
+class.projekt.actors.Bloodstream.image=d.png
+class.projekt.actors.Bloodstream.superclass=greenfoot.Actor
+class.projekt.actors.Lining.image=d.png
+class.projekt.actors.Lining.superclass=greenfoot.Actor
+class.projekt.actors.WhiteCell.image=d.png
+class.projekt.actors.WhiteCell.superclass=greenfoot.Actor
 
 # Editor Settings
 editor.fx.0.height=0
