@@ -4,30 +4,31 @@ import greenfoot.Actor;
 import greenfoot.Greenfoot;
 import greenfoot.GreenfootImage;
 
-import java.util.concurrent.TimeUnit;
-
 public class Crab extends Actor {
+    private GreenfootImage image1;
+    private GreenfootImage image2;
+
+
     public Crab() {
         getImage().scale(50,50);
     }
 
-    //GreenfootImage 1 = new GreenfootImage("crab.png");
-
-
     public void act() {
-        int infinity = 10;
-        while (infinity >  5) { /*
-            if (new GreenfootImage("crab.png").equals(getImage())){
-                setImage("crab2.png");
-            }  */
+        setImage(image1);
 
-            getImage().scale(50,50);
-            //Greenfoot.delay(1);
-            getImage().scale(60,50);
-            //1Greenfoot.delay(1);
+        if (Greenfoot.isKeyDown("w")) {
+            setLocation(getX(), getY() - 4);
+        } else if (Greenfoot.isKeyDown("s")) {
+            setLocation(getX(), getY() + 4);
+        } else if (Greenfoot.isKeyDown("a")) {
+            setLocation(getX() - 4, getY());
+        } else if (Greenfoot.isKeyDown("d")) {
+            setLocation(getX() + 4, getY());
+        } else if (Greenfoot.isKeyDown("q")) {
+            turn(-3);
+        } else if (Greenfoot.isKeyDown("e")) {
+            turn(3);
         }
-
-            move(4);
 
         if (isTouching(Lobster.class)) {
             System.out.println("Collision!");

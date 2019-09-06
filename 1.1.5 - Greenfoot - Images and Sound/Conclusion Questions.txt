@@ -3,14 +3,29 @@ Period 4
 
 CONLUSION QUESTIONS 1.1.5
 
-1). What is variable scope? What is the main difference between an instance variable and a local scope variable?
+1A. What is variable scope? What is the main difference between an instance variable and a local scope variable?
 >
 
-2). What is a class diagram? What information can you get from it? Where is it in the Greenfoot IDE?
->   A class diagram show the relation of all the classes in a project. It is on the right side in the Greenfoot IDE.
+2A. What are the names of the declared variables?
+>   The name of the declared variables are thisNumber and age.
 
-3). What is an API? How is it useful? In the Greenfoot IDE, where would you find the Greenfoot API?
->   An API is a set of functions and procedures that allow more complex results by the making of a library of pre-made classes and functions.
+2B. Which of them are instance variables and which are local variables?
+>
 
-4). If I want to know the location of every object around a crab, what method would I use (look in the Greenfoot API)? Write the line of code needed to call the method on object crab of class Crab.
->   If the location of every object around a crab is needed, "Actor.getX()" and "Actor.getY()" would be used.
+2C. For the local variable(s), at what point will the program destroy the variable(s)?
+>
+
+2D. What are the values assigned to each of the variables?
+>   A number 5 is assigned into thisNumber.
+
+3A. What is the name of the constructor for the Lobster class?
+>
+
+3B. What does it mean to instantiate an object from a class?
+>
+
+3C. What keyword is used before the constructor to instantiate an object?
+>
+
+4A. Write the line of code that would call the constructor for class Tortoise to instantiate a new tortoise into the variable mutantNinja.
+>
