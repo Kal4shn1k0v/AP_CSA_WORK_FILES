@@ -9,12 +9,12 @@ Please note that:
 
 CURRENT ACTIVE AND WORKING BRANCHES:
 
->
+>	GREENFOOT-MAVEN-Compat [Link](https://github.com/Kal4shn1k0v/AP_CSA_WORK_FILES/tree/GREENFOOT-MAVEN-Compat)
 
 Requirements:
 
->	Maven
->	JRE + JDK
+>	Maven;
+>	Java JRE + JDK;
 >	An IDE; Preferrably INTELLIJ
 
 INSTRUCTIONS: Compile through console:
