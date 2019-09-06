@@ -1,0 +1,31 @@
+Daniel Zhang 
+Period 4 
+
+CONLUSION QUESTIONS 1.1.5
+
+1A. What is variable scope? What is the main difference between an instance variable and a local scope variable?
+>
+
+2A. What are the names of the declared variables?
+>   The name of the declared variables are thisNumber and age.
+
+2B. Which of them are instance variables and which are local variables?
+>
+
+2C. For the local variable(s), at what point will the program destroy the variable(s)?
+>
+
+2D. What are the values assigned to each of the variables?
+>   A number 5 is assigned into thisNumber.
+
+3A. What is the name of the constructor for the Lobster class?
+>
+
+3B. What does it mean to instantiate an object from a class?
+>
+
+3C. What keyword is used before the constructor to instantiate an object?
+>
+
+4A. Write the line of code that would call the constructor for class Tortoise to instantiate a new tortoise into the variable mutantNinja.
+>
