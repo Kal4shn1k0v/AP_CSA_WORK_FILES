@@ -4,28 +4,28 @@ Period 4
 CONLUSION QUESTIONS 1.1.5
 
 1A. What is variable scope? What is the main difference between an instance variable and a local scope variable?
->
+>   A variable scope is a section of the code where the variable is visible. Instance variables can be seen by all methods in the class while scope variables can be seen only where they are declared.
 
 2A. What are the names of the declared variables?
 >   The name of the declared variables are thisNumber and age.
 
 2B. Which of them are instance variables and which are local variables?
->
+>   the variable age() is an instance variable while thisNumber() is a local variable.
 
 2C. For the local variable(s), at what point will the program destroy the variable(s)?
->
+>   The program destroy the variables when true.
 
 2D. What are the values assigned to each of the variables?
 >   A number 5 is assigned into thisNumber.
 
 3A. What is the name of the constructor for the Lobster class?
->
+>   The name of the constructor for the Lobster class is Lobster.
 
 3B. What does it mean to instantiate an object from a class?
->
+>   To instantiate is to create and define a variable to the object, setting a name, and locating it.
 
 3C. What keyword is used before the constructor to instantiate an object?
->
+>   The keyword "private" is used before the constructor to instantiate an object.
 
 4A. Write the line of code that would call the constructor for class Tortoise to instantiate a new tortoise into the variable mutantNinja.
->
+>   private Tortoise mutantNinja = new tortoise;
