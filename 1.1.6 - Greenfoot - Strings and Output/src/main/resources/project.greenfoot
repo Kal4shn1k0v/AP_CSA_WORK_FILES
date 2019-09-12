@@ -5,6 +5,8 @@ class.projekt.actors.Bacteria.image=bacteria.png
 class.projekt.actors.Bacteria.superclass=greenfoot.Actor
 class.projekt.actors.Lining.image=lining.png
 class.projekt.actors.Lining.superclass=greenfoot.Actor
+class.projekt.actors.Virus.image=virus.png
+class.projekt.actors.Virus.superclass=greenfoot.Actor
 class.projekt.actors.WhiteCell.image=whitecell.png
 class.projekt.actors.WhiteCell.superclass=greenfoot.Actor
 

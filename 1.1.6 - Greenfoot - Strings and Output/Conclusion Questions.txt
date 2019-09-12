@@ -1,0 +1,27 @@
+Daniel Zhang
+Period 4
+
+CONCLUSION QUESTIONS 1.1.6
+
+1A. Codingbat exercises (testing your use of integer variables like score)
+>   http://codingbat.com/prob/p154485 -
+>   http://codingbat.com/prob/p116624 -
+>   http://codingbat.com/prob/p184004 -
+
+2A. I want to call the World method removeObjects() on an Actor object while inside the Actor class. How would I do this in one line using method chaining and dot notation?
+>
+
+3A. Write the method calls for: Inside an Actor object call the Greenfoot method getKey().
+>
+
+3B. Write the method calls for: Inside a World object call the isTouching() method on a particular object assigned to the variable lobster. Check if lobster is touching an object of class Crab.
+>
+
+4A. What is the difference between a public method and a private method? When do I want to make a method private?
+>   A public method
+
+5A. What is casting? When do we need to cast a variable?
+>   Casting is
+
+6A. What happens when the + operator is used between two integers? What about when it is used between two Strings? An integer and a String?
+>   When used between two integers, the integers add up. When used between two strings,

@@ -8,7 +8,6 @@ public class Lining extends Actor {
 
         if (getX() == 0) {
             getWorld().removeObject(this);
-            getWorld().addObject(this,225, 360);
         }
     }    
 }
