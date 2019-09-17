@@ -1,62 +1,32 @@
-# Greenfoot Maven Demo
+# AP_CSA_WORK_FILES
+AP CSA ClassWork files code
 
-This is a simple Game showcasing Greenfoot development using Maven only.
+##Please note that:
 
-To get more information on the process of developing without using the Greenfoot IDE, please read 
-[DEVELOPMENT.md](DEVELOPMENT.md) or [the blogpost](https://blog.lerk.io/making-games-with-greenfoot-without-greenfoot/) I made, which is essentially the same.
+>	All code is source.<br/>
+>	Errors are subjected to occur. Do not rely on present code completely.<br/>
+>	Please use at your own risk; Author is not responsible for any trouble or damage that may occur.<br/>
 
-## Motivation
+##CURRENT ACTIVE AND WORKING BRANCHES:
 
-Developing games with Greenfoot is extremely easy compared to other Java frameworks. Unfortunately you are kind of 
-forced to use the toolset supplied by Greenfoot, which might be great for beginners but is just a pain if you are 
-used to develop using a real IDE. Also using a IDE to develop, means that you can use that IDE's debugging tools, which 
-is great because the Greenfoot tools only offer stepwise calling of the `act()` methods to do "*debugging*". 
+>	GREENFOOT-MAVEN-Compat [Link](https://github.com/Kal4shn1k0v/AP_CSA_WORK_FILES/tree/GREENFOOT-MAVEN-Compat)
 
-## Gameplay
+##Requirements:
 
-Since this is just a demo focusing on the technical side of this, the gameplay is hilariously simple and stupid.
+>	Maven installation.<br/>
+>	Java JRE + JDK installation.<br/>
+>	An IDE of your choice. *Preferrably INTELLIJ*
 
-The game is made for two players. Player one uses the arrow keys to control the moneybag and has the goal to reach 
-the house. Player two uses `wasd` to control the thug, their goal is to reach the moneybag before it can reach the 
-house. Once either goal is completed, the world has to be reset (or the game has to be restarted, call it what you 
-want).
+##INSTRUCTIONS: Compile through console:
 
-## Building/Running
+>	Make sure that JDK, JRE, Maven is correctly installed in system_variables inside PATH<br/>
+>	Initalize a command prompt window, set directory to install directory.<br/>
+>	
 
-There are many ways to build and run this, I will only cover two of them.
+##INSTRUCTIONS: Compile through IDE: *INTELLIJ is recommended*
 
-### Prerequisites
-
-In any case, you'll need to clone this repo. You can do this by using any Git GUI Client or simply the command line:
-
-```
-$ git clone git@github.com:lfuelling/greenfoot-maven-demo.git
-``` 
-
-Also make sure, you have the following tools installed:
-
-- Java 8 (JDK)
-- Maven
-- IntelliJ or any Java IDE (GUI way only)
-
-### Command line
-
-To build and run this, do the following in a terminal:
-
-```
-$ cd greenfoot-maven-demo
-$ mvn clean install -DskipTests
-$ java -jar target/greenfoot-maven-demo-1.0-SNAPSHOT-jar-with-dependencies.jar
-```
-
-If you try to use the jar without bundled dependencies it **won't work**!
-
-### GUI
-
-Open the `pom.xml` as a new project in IntelliJ or your IDE and switch on auto import for Maven.
-
-If the import is done, create a new run configuration similar to the following:
-
-![IntelliJ run configuration](runconfig.png)
-
-You should now be able to run the game and even debug it!
+>	Launch the IDE of your choice.<br/>
+>	Open Run Configurations.<br/>
+>	New Run Configuration → New... → Application.<br/>
+>	Set Main Class as projekt.DemoApp<br/>
+>	
