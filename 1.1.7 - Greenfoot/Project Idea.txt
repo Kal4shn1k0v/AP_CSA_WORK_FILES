@@ -1,0 +1,16 @@
+## Pre-Init
+
+>Set scren resolutions. 1080p will be currently used.
+>Instructions prompt.
+>Gamemodes: Air to Air, Ground pounder, Search and destroy. Ground pounder will only be used.
+
+## Init
+
+>Power: Production points, production potency
+>Side menu: Current Luftflottte, add Factory
+>Set map resolutions.
+>Grids and grid sizes.
+
+## Game plan
+
+>Fleet
