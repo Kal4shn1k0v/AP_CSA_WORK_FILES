@@ -5,7 +5,7 @@ import projekt.worlds.MyWorld;
 
 public class Virus extends Actor {
 
-    public void act() {
+    public void act() { //Movement.
         setLocation(getX()-2, getY());
         turn(1);
 

@@ -6,11 +6,11 @@ import projekt.worlds.MyWorld;
 public class WhiteCell extends Actor {
     private GreenfootSound deathsound = new GreenfootSound("death.wav");
 
-    public void act() {
+    public void act() { //Movement.
         checkKeyPress();
     }
 
-    private void checkKeyPress() {
+    private void checkKeyPress() { //Movement detection.
         if (Greenfoot.isKeyDown("up")) {
             setLocation(getX(), getY()-4);
         }
@@ -19,16 +19,15 @@ public class WhiteCell extends Actor {
             setLocation(getX(), getY()+4);
         }
 
-        if (this.isTouching(Virus.class)) {
+        if (this.isTouching(Virus.class)) { //Trigger death condition.
             die();
         }
     }
 
-    public void die(){
+    public void die(){ //Death conditions and results.
         //Greenfoot.stop();
         //System.out.println("Dead");
         deathsound.play();
-
 
         int scoreloopend = 100;
         int scoreloop;

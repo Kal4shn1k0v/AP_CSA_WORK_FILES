@@ -11,7 +11,7 @@ public class ScoreBoard extends Actor  {
         setImage(new GreenfootImage("Score: " + text + "    Time: " + time, 18, Color.WHITE, Color.BLACK));
     }
 
-    public void act() {
+    public void act() { //Movement.
 
     }
 }

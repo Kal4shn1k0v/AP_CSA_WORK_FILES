@@ -4,24 +4,24 @@ Period 4
 CONCLUSION QUESTIONS 1.1.6
 
 1A. Codingbat exercises (testing your use of integer variables like score)
->   http://codingbat.com/prob/p154485 -
->   http://codingbat.com/prob/p116624 -
->   http://codingbat.com/prob/p184004 -
+>   http://codingbat.com/prob/p154485 - Completed 
+>   http://codingbat.com/prob/p116624 - Completed
+>   http://codingbat.com/prob/p184004 - Completed
 
-2A. I want to call the World method removeObjects() on an Actor object while inside the Actor class. How would I do this in one line using method chaining and dot notation?
->
+2A. Write the method calls for: The World method removeObjects() on an Actor object while inside the Actor class. How would I do this in one line using method chaining and dot notation?
+>   getWorld().removeObject(this);
 
 3A. Write the method calls for: Inside an Actor object call the Greenfoot method getKey().
->
+>   getWorld().getkey(this);
 
 3B. Write the method calls for: Inside a World object call the isTouching() method on a particular object assigned to the variable lobster. Check if lobster is touching an object of class Crab.
->
+>   if (isTouching(lobster.class))
 
-4A. What is the difference between a public method and a private method? When do I want to make a method private?
->   A public method
+4A. What is the difference between a public method and a private method? When should you to make a method private?
+>   A public method allows a method to be read by all classes. A private method is only accesible inside the class it is in. You to make a method private when you dont want other classes reading the method.
 
 5A. What is casting? When do we need to cast a variable?
->   Casting is
+>   Casting is the process of making a variable behaves as a variable of another type.
 
 6A. What happens when the + operator is used between two integers? What about when it is used between two Strings? An integer and a String?
->   When used between two integers, the integers add up. When used between two strings,
+>   When used between two integers, the integers add up. When used between two strings, the strings are joined together. When used in a integer and a String, it is an error as data types do not match.

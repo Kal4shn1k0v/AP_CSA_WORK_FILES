@@ -6,9 +6,9 @@ import projekt.worlds.MyWorld;
 public class Bacteria extends Actor {
     public int velocity;
 
-    private GreenfootSound slurpsound = new GreenfootSound("slurp.wav");
+    private GreenfootSound slurpsound = new GreenfootSound("slurp.wav"); //Sound initialization.
 
-    public Bacteria(int speed) {
+    public Bacteria(int speed) { //Set speed.
         if (speed !=0 ) {
             velocity = speed;
         } else {
@@ -20,7 +20,7 @@ public class Bacteria extends Actor {
         setLocation(getX()-velocity, getY());
         turn(3);
         
-        if (getX() == 0) {
+        if (getX() == 0) { //Give scores.
             getWorld().removeObject(this);
             int scoreloopend = 15;
             int scoreloop;

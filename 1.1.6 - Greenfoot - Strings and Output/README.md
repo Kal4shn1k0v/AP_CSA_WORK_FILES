@@ -1,39 +1,29 @@
-# Greenfoot Maven Demo
+﻿##Please note that:
 
-This is a simple Game showcasing Greenfoot development using Maven only.
+>	All code is source.<br/>
+>	Errors are subjected to occur. Do not rely on present code completely.<br/>
+>	Please use at your own risk; Author is not responsible for any trouble or damage that may occur.<br/>
 
-## Building/Running
+##CURRENT ACTIVE AND WORKING BRANCHES:
 
-There are many ways to build and run this, I will only cover two of them.
+>	GREENFOOT-MAVEN-Compat [Link](https://github.com/Kal4shn1k0v/AP_CSA_WORK_FILES/tree/GREENFOOT-MAVEN-Compat)
 
-### Prerequisites
+##Requirements:
 
-In any case, you'll need to clone this repo. You can do this by using any Git GUI Client or simply the command line:
+>	Maven installation.<br/>
+>	Java JRE + JDK installation.<br/>
+>	An IDE of your choice. *Preferrably INTELLIJ*
 
-Also make sure, you have the following tools installed:
+##INSTRUCTIONS: Compile through console:
 
-- Java 8 (JDK)
-- Maven
-- IntelliJ or any Java IDE (GUI way only)
+>	Make sure that JDK, JRE, Maven is correctly installed in system_variables inside PATH<br/>
+>	Initalize a command prompt window, set directory to install directory.<br/>
+>	
 
-### Command line
+##INSTRUCTIONS: Compile through IDE: *INTELLIJ is recommended*
 
-To build and run this, do the following in a terminal:
-
-```
-$ cd greenfoot-maven-demo
-$ mvn clean install -DskipTests
-$ java -jar target/greenfoot-maven-demo-1.0-SNAPSHOT-jar-with-dependencies.jar
-```
-
-If you try to use the jar without bundled dependencies it **WILL NOT WORK**!
-
-### GUI
-
-Open the `pom.xml` as a new project in IntelliJ or your IDE and switch on auto import for Maven.
-
-If the import is done, create a new run configuration similar to the following:
-
-![IntelliJ run configuration](runconfig.png)
-
-You should now be able to run the game and even debug it!
+>	Launch the IDE of your choice.<br/>
+>	Open Run Configurations.<br/>
+>	New Run Configuration → New... → Application.<br/>
+>	Set Main Class as projekt.DemoApp<br/>
+>	Now the program can be compiled and run through IDE.
