@@ -1,40 +1,33 @@
-package projekt.actors;
-
-import greenfoot.Actor;
-import greenfoot.Greenfoot;
-import greenfoot.GreenfootImage;
-import greenfoot.World;
-
-import static bluej.runtime.ExecServer.addObject;
-
-public class Crab extends Actor {
-    private GreenfootImage image1 = new GreenfootImage("crab1.png");
-    private GreenfootImage image2 = new GreenfootImage("crab2.png");
-
-    public static boolean anotherImage = false;
-
-    public Crab() {
-        getImage().scale(50,50);
-    }
-
-    public void switchImage() {
-        if (getImage().equals(image1)) {
-            setImage (image2);
+    import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+    
+    public class Crab extends Actor {
+        private GreenfootImage image1 = new GreenfootImage("crab1.png");
+        private GreenfootImage image2 = new GreenfootImage("crab2.png");
+    
+        public static boolean anotherImage = false;
+    
+        public Crab() {
+            getImage().scale(50,50);
         }
-        else {
-            setImage (image1);
+    
+        public void switchImage() {
+            if (getImage().equals(image1)) {
+                setImage (image2);
+            }
+            else {
+                setImage (image1);
+            }
         }
-    }
-
-
-    //getWorld().addObject(new Worm(), Greenfoot.getRandomNumber(1000),Greenfoot.getRandomNumber(1000));
-
-    public void death() {
-        getWorld().addObject(new Loose(), 1,1);
+    
+    
+        //getWorld().addObject(new Worm(), Greenfoot.getRandomNumber(1000),Greenfoot.getRandomNumber(1000));
+    
+         public void death() {
+        getWorld().addObject(new Loose(), 500,500);
     }
 
     public void win() {
-        getWorld().addObject(new Loose(), 1,1);
+        getWorld().addObject(new Win(), 500,500);
     }
 
     public void act() {
@@ -76,3 +69,4 @@ public class Crab extends Actor {
         }
     }
 }
+

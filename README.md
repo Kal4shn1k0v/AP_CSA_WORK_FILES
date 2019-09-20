@@ -11,6 +11,8 @@ AP CSA ClassWork files code
 
 >	GREENFOOT-MAVEN-Compat [Link](https://github.com/Kal4shn1k0v/AP_CSA_WORK_FILES/tree/GREENFOOT-MAVEN-Compat)
 
+# To view and run Greenfoot-based projects:
+
 ##Requirements:
 
 >	Maven installation.<br/>
