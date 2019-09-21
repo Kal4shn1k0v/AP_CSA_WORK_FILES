@@ -5,7 +5,7 @@ import greenfoot.World;
 public class MyWorld extends World {
     //Global variables
     public MyWorld() {
-        super(1920, 1080, 1);
+        super(1600, 1000, 1);
         prepare();
     }
 

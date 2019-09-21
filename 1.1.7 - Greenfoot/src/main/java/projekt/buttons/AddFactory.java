@@ -1,4 +1,6 @@
 package projekt.buttons;
 
-public class AddFactory {
+import greenfoot.Actor;
+
+public class AddFactory extends Actor {
 }

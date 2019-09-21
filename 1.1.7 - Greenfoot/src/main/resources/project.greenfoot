@@ -11,6 +11,8 @@ class.projekt.actors.Virus.image=virus.png
 class.projekt.actors.Virus.superclass=greenfoot.Actor
 class.projekt.actors.WhiteCell.image=whitecell.png
 class.projekt.actors.WhiteCell.superclass=greenfoot.Actor
+class.projekt.worlds.MyWorld.image=background.png
+class.projekt.worlds.MyWorld.superclass=greenfoot.World
 
 # Editor Settings
 editor.fx.0.height=0
