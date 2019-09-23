@@ -6,10 +6,13 @@ import greenfoot.Greenfoot;
 public class Dornier217 extends Actor {
     public void act() {
         if (Greenfoot.isKeyDown("w")){
-            move(1);
+            setLocation(getX(), getY() - 1);
         } else if (Greenfoot.isKeyDown("s")) {
-            move(-1);
+            setLocation(getX(), getY() + 1);
+        } else if (Greenfoot.isKeyDown("a")) {
+            setLocation(getX() - 1, getY());
+        } else if (Greenfoot.isKeyDown("d")) {
+            setLocation(getX() + 1, getY());
         }
-
     }
 }

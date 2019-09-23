@@ -1,16 +1,10 @@
 # Class definitions
-class.projekt.worlds.MyWorld.image=background.jpg
-class.projekt.worlds.MyWorld.superclass=greenfoot.World
 class.projekt.actors.Bacteria.image=bacteria.png
 class.projekt.actors.Bacteria.superclass=greenfoot.Actor
-class.projekt.actors.Lining.image=lining.png
-class.projekt.actors.Lining.superclass=greenfoot.Actor
-class.projekt.actors.RedCell.image=redcell.png
-class.projekt.actors.RedCell.superclass=greenfoot.Actor
-class.projekt.actors.Virus.image=virus.png
-class.projekt.actors.Virus.superclass=greenfoot.Actor
-class.projekt.actors.WhiteCell.image=whitecell.png
-class.projekt.actors.WhiteCell.superclass=greenfoot.Actor
+class.projekt.actors.Luftlotte.image=luftlotte.png
+class.projekt.actors.Luftlotte.superclass=greenfoot.Actor
+class.projekt.actors.
+class.projekt.actors.
 class.projekt.worlds.MyWorld.image=background.png
 class.projekt.worlds.MyWorld.superclass=greenfoot.World
 

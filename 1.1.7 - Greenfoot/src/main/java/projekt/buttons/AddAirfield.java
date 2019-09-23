@@ -1,4 +1,6 @@
 package projekt.buttons;
 
-public class AddAirfield {
+import greenfoot.Actor;
+
+public class AddAirfield extends Actor {
 }
