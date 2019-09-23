@@ -2,6 +2,7 @@ package projekt.actors;
 
 import greenfoot.Actor;
 import greenfoot.Greenfoot;
+import projekt.GameAPI;
 
 public class Dornier217 extends Actor {
     public void act() {
@@ -14,5 +15,10 @@ public class Dornier217 extends Actor {
         } else if (Greenfoot.isKeyDown("d")) {
             setLocation(getX() + 1, getY());
         }
+        GameAPI.setGrid("Dornier217", 1,1);
+    }
+
+    public static void nice() {
+        
     }
 }

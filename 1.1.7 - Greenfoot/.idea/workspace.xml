@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4d3cf597-3fa9-4c7f-9ea4-2d173da3c9a5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instructional Files/1.1.7 Greenfoot Game.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instructional Files/1.1.7.B.RU Elevator Speech.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Instructional Files/1.1.7.RU Greenfoot Game.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Idea.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runconfig.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/DemoApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/actors/Dornier217.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/actors/Heinkel274.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/actors/Messerschmitt109.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/buttons/AddAirfield.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/buttons/AddFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/buttons/Data.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/buttons/DornierIcon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/buttons/HeinkelIcon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/buttons/Luftflotte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/buttons/MesserschmittIcon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/worlds/MyWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Source/aa.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Source/airfield.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Source/dornier.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Source/heinkel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Source/luftlotte.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Source/messerschmitt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Source/quadAA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/Source/runway.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/aa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/aaicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/airbaseicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/airfield.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/background.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/factory.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/luftlotte.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/images/radar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/project.greenfoot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/soundindex.list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sounds/source/airplane_bomb_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sounds/source/airplane_bomb_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sounds/source/airplane_bomb_03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sounds/source/airplane_bomb_04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sounds/source/airplane_bomb_05.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sounds/source/airplane_bomb_06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sounds/source/airplane_bomb_07.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sounds/source/airplane_bomb_08.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sounds/source/airplane_bomb_09.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sounds/source/airplane_bomb_10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sounds/source/airplane_heavy_idle_04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sounds/source/airplane_idle_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sounds/source/airplane_jet_idle_04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/standalone.properties" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1R7uxFR0arumvXbJMiGSi8Bmdpw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../1.1.7 - Greenfoot - Air Raid/pom.xml" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Run" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="projekt.DemoApp" />
+      <module name="greenfoot-maven-demo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="projekt.DemoApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d3cf597-3fa9-4c7f-9ea4-2d173da3c9a5" name="Default Changelist" comment="" />
+      <created>1569030699868</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569030699868</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
