@@ -6,8 +6,8 @@
 
 ## Init
 
->Power: Production points, production potency
->Side menu: Current Luftflottte, add Factory
+>Power: Production points, production potency, production points.
+>Side menu: Current Luftflottte, add Factory, add
 >Set map resolutions.
 >Grids and grid sizes.
 

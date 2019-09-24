@@ -6,6 +6,8 @@ import greenfoot.export.GreenfootScenarioApplication;
 import javax.swing.*;
 
 public class DemoApp extends GreenfootScenarioApplication {
+    public static boolean hasSelectedItem = false;
+
     public static void main(String[] args) {
         resolution();
 

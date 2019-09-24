@@ -2,6 +2,7 @@ package projekt.actors;
 
 import greenfoot.Actor;
 import greenfoot.Greenfoot;
+import projekt.DemoApp;
 import projekt.GameAPI;
 
 public class Dornier217 extends Actor {
@@ -15,10 +16,16 @@ public class Dornier217 extends Actor {
         } else if (Greenfoot.isKeyDown("d")) {
             setLocation(getX() + 1, getY());
         }
-        GameAPI.setGrid("Dornier217", 1,1);
+
+        if (Greenfoot.mouseClicked(this) && !DemoApp.hasSelectedItem) {
+            DemoApp.hasSelectedItem = true;
+            GameAPI.getTargetGrid();
+            System.out.println("Clicked");
+            System.out.println(DemoApp.hasSelectedItem);
+        }
     }
 
-    public static void nice() {
-        
+    public static void fly() {
+
     }
 }
