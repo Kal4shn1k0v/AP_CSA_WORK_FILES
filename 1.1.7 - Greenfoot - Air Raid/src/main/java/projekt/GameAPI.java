@@ -4,8 +4,7 @@ import greenfoot.*;
 import projekt.actors.Heinkel274;
 
 public class GameAPI extends Actor{
-    private static int mouseClickX;
-    private static int mouseClickY;
+
 
     private static int mouseClickXgridResult;
     private static int mouseClickYgridResult;
@@ -23,14 +22,11 @@ public class GameAPI extends Actor{
         System.out.println("SLAVE");
     }
 
-    
+
 
     public static void getGrid() { //For getting original coordinates for each grid.
-        Greenfoot.delay(1);
-        if (Greenfoot.mouseClicked(null) && DemoApp.hasSelectedItem) {
-            mouseClickX = Greenfoot.getMouseInfo().getX();
-            mouseClickY = Greenfoot.getMouseInfo().getY();
 
+/*
             System.out.println(mouseClickX);
             System.out.println(mouseClickY);
 
@@ -135,19 +131,26 @@ public class GameAPI extends Actor{
             } else if (680 > mouseClickX && mouseClickX > 640) {
                 mouseClickXgridResult = 2;
             } else if (640 > mouseClickX && mouseClickX > 600) {
+<<<<<<< HEAD
+                mouseClickYgridResult = 1;
+            }*/
+=======
                 mouseClickXgridResult = 1;
             }
         } else if (Greenfoot.isKeyDown("escape")) {
             DemoApp.hasSelectedItem = false;
         }
+>>>>>>> a73e18e92270b6fdde2bcfdcea833d3b09ee0f02
     }
 
-    public static void getTargetGrid(){
-        getGrid();
+    public static void getTargetGrid() {
 
+<<<<<<< HEAD
+=======
         if (mouseClickXgridResult >= 1 && mouseClickYgridResult >= 1) {
             System.out.println("Targeted 1,1");
             DemoApp.hasSelectedItem = false;
         }
+>>>>>>> a73e18e92270b6fdde2bcfdcea833d3b09ee0f02
     }
 }

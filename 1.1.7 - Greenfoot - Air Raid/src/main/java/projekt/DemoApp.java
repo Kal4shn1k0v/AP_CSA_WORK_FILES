@@ -6,7 +6,16 @@ import greenfoot.export.GreenfootScenarioApplication;
 import javax.swing.*;
 
 public class DemoApp extends GreenfootScenarioApplication {
-    public static boolean hasSelectedItem = false;
+    //Global variables
+    public static int mouseClickXLeft;
+    public static int mouseClickYLeft;
+
+    public static int mouseClickXrRight;
+    public static int mouseClickYRight;
+
+    public static boolean canDetectXY = false;
+
+    public static int clickSide;
 
     public static void main(String[] args) {
         resolution();
