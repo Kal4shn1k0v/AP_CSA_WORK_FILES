@@ -87,55 +87,55 @@ public class GameAPI extends Actor{
             }
 
             if (1600 > mouseClickX && mouseClickX > 1560) {
-                mouseClickYgridResult = 25;
+                mouseClickXgridResult = 25;
             } else if (1560 > mouseClickX && mouseClickX > 1520) {
-                mouseClickYgridResult = 24;
+                mouseClickXgridResult = 24;
             } else if (1520 > mouseClickX && mouseClickX > 1480) {
-                mouseClickYgridResult = 23;
+                mouseClickXgridResult = 23;
             } else if (1480 > mouseClickX && mouseClickX > 1440) {
-                mouseClickYgridResult = 22;
+                mouseClickXgridResult = 22;
             } else if (1440 > mouseClickX && mouseClickX > 1400) {
-                mouseClickYgridResult = 21;
+                mouseClickXgridResult = 21;
             } else if (1400 > mouseClickX && mouseClickX > 1360) {
-                mouseClickYgridResult = 20;
+                mouseClickXgridResult = 20;
             } else if (1360 > mouseClickX && mouseClickX > 1320) {
-                mouseClickYgridResult = 19;
+                mouseClickXgridResult = 19;
             } else if (1320 > mouseClickX && mouseClickX > 1280) {
-                mouseClickYgridResult = 18;
+                mouseClickXgridResult = 18;
             } else if (1280 > mouseClickX && mouseClickX > 1240) {
-                mouseClickYgridResult = 17;
+                mouseClickXgridResult = 17;
             } else if (1240 > mouseClickX && mouseClickX > 1200) {
-                mouseClickYgridResult = 16;
+                mouseClickXgridResult = 16;
             } else if (1200 > mouseClickX && mouseClickX > 1160) {
-                mouseClickYgridResult = 15;
+                mouseClickXgridResult = 15;
             } else if (1160 > mouseClickX && mouseClickX > 1120) {
-                mouseClickYgridResult = 14;
+                mouseClickXgridResult = 14;
             } else if (1120 > mouseClickX && mouseClickX > 1080) {
-                mouseClickYgridResult = 13;
+                mouseClickXgridResult = 13;
             } else if (1080 > mouseClickX && mouseClickX > 1040) {
-                mouseClickYgridResult = 12;
+                mouseClickXgridResult = 12;
             } else if (1040 > mouseClickX && mouseClickX > 1000) {
-                mouseClickYgridResult = 11;
+                mouseClickXgridResult = 11;
             } else if (1000 > mouseClickX && mouseClickX > 960) {
-                mouseClickYgridResult = 10;
+                mouseClickXgridResult = 10;
             } else if (960 > mouseClickX && mouseClickX > 920) {
-                mouseClickYgridResult = 9;
+                mouseClickXgridResult = 9;
             } else if (920 > mouseClickX && mouseClickX > 880) {
-                mouseClickYgridResult = 8;
+                mouseClickXgridResult = 8;
             } else if (880 > mouseClickX && mouseClickX > 840) {
-                mouseClickYgridResult = 7;
+                mouseClickXgridResult = 7;
             } else if (840 > mouseClickX && mouseClickX > 800) {
-                mouseClickYgridResult = 6;
+                mouseClickXgridResult = 6;
             } else if (800 > mouseClickX && mouseClickX > 760) {
-                mouseClickYgridResult = 5;
+                mouseClickXgridResult = 5;
             } else if (760 > mouseClickX && mouseClickX > 720) {
-                mouseClickYgridResult = 4;
+                mouseClickXgridResult = 4;
             } else if (720 > mouseClickX && mouseClickX > 680) {
-                mouseClickYgridResult = 3;
+                mouseClickXgridResult = 3;
             } else if (680 > mouseClickX && mouseClickX > 640) {
-                mouseClickYgridResult = 2;
+                mouseClickXgridResult = 2;
             } else if (640 > mouseClickX && mouseClickX > 600) {
-                mouseClickYgridResult = 1;
+                mouseClickXgridResult = 1;
             }
         } else if (Greenfoot.isKeyDown("escape")) {
             DemoApp.hasSelectedItem = false;
@@ -145,7 +145,7 @@ public class GameAPI extends Actor{
     public static void getTargetGrid(){
         getGrid();
 
-        if (mouseClickXgridResult == 1 && mouseClickYgridResult == 1) {
+        if (mouseClickXgridResult >= 1 && mouseClickYgridResult >= 1) {
             System.out.println("Targeted 1,1");
             DemoApp.hasSelectedItem = false;
         }

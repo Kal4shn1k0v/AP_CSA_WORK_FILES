@@ -20,9 +20,10 @@ public class Dornier217 extends Actor {
         if (Greenfoot.mouseClicked(this) && !DemoApp.hasSelectedItem) {
             DemoApp.hasSelectedItem = true;
             GameAPI.getTargetGrid();
-            System.out.println("Clicked");
             System.out.println(DemoApp.hasSelectedItem);
         }
+
+        System.out.println(DemoApp.hasSelectedItem);
     }
 
     public static void fly() {
