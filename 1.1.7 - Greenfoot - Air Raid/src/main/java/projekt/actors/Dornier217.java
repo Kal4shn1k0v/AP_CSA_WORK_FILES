@@ -20,21 +20,28 @@ public class Dornier217 extends Actor {
             setLocation(getX() + 1, getY());
         }
 
-        MouseInfo mi = Greenfoot.getMouseInfo();
+        MouseInfo mouse = Greenfoot.getMouseInfo();
         if (Greenfoot.mousePressed(null) && Greenfoot.mouseClicked(this)) {
-            int button = mi.getButton();
+            int button = mouse.getButton();
             if (button == btnLEFT) System.out.println("Left");
             if (button == btnRIGHT) System.out.println("Right");
         }
-        if (Greenfoot.mouseClicked(null) && Greenfoot.mouseClicked(this)) {
-            int button = mi.getButton();
-            if (button == btnLEFT) {
-                System.out.println("No left");
-                DemoApp.mouseClickXLeft = Greenfoot.getMouseInfo().getX();
-                DemoApp.mouseClickYLeft = Greenfoot.getMouseInfo().getY();
+        if (Greenfoot.mouseClicked(null)) {
+            int button = mouse.getButton();
+            if (button == btnLEFT && Greenfoot.mouseClicked(this)) {
+                int XLeft = Greenfoot.getMouseInfo().getX();
+                int YLeft = Greenfoot.getMouseInfo().getY();
+                //System.out.println(DemoApp.mouseClickXLeft);
+                //System.out.println(DemoApp.mouseClickYLeft);
+                GameAPI.XYtoGrid(XLeft, YLeft);
             }
             if (button == btnRIGHT) {
-                System.out.println("No right");
+                int XRight = Greenfoot.getMouseInfo().getX();
+                int YRight = Greenfoot.getMouseInfo().getY();
+                GameAPI.XYtoGrid(XRight, YRight);
+                GameAPI.GridToXY(GameAPI.mouse);
+                //System.out.println(DemoApp.mouseClickXRight);
+                //System.out.println(DemoApp.mouseClickYRight);
             }
         }
 
@@ -47,20 +54,10 @@ public class Dornier217 extends Actor {
         if (Greenfoot.mouseClicked(this) && DemoApp.canDetectXY) {
             DemoApp.canDetectXY = false;
             GameAPI.getTargetGrid();
-<<<<<<< HEAD
             System.out.println("Clicked");
             System.out.println(DemoApp.canDetectXY);
-        }
-
-        */
-=======
-            System.out.println(DemoApp.hasSelectedItem);
-        }
-
-        System.out.println(DemoApp.hasSelectedItem);
->>>>>>> a73e18e92270b6fdde2bcfdcea833d3b09ee0f02
+        }*/
     }
-
     public static void fly() {
 
     }

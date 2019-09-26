@@ -10,7 +10,7 @@ public class DemoApp extends GreenfootScenarioApplication {
     public static int mouseClickXLeft;
     public static int mouseClickYLeft;
 
-    public static int mouseClickXrRight;
+    public static int mouseClickXRight;
     public static int mouseClickYRight;
 
     public static boolean canDetectXY = false;

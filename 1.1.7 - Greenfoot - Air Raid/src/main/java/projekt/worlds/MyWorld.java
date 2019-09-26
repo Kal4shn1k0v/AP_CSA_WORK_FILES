@@ -18,6 +18,7 @@ public class MyWorld extends World {
     }
 
     public void act() {
+        /*
         MouseInfo mi = Greenfoot.getMouseInfo();
         if (Greenfoot.mousePressed(null)) {
             int button = mi.getButton();
@@ -36,7 +37,7 @@ public class MyWorld extends World {
             if (button == btnRIGHT) {
                 System.out.println("No right");
             }
-        }
+        } */
     }
 
     private void prepare() {
