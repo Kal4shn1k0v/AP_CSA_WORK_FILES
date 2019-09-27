@@ -2,14 +2,27 @@ package projekt.actors;
 
 import greenfoot.Actor;
 import greenfoot.Greenfoot;
+import greenfoot.GreenfootImage;
 import greenfoot.MouseInfo;
 import projekt.DemoApp;
 import projekt.GameAPI;
 
 public class Dornier217 extends Actor {
+    //Variable declaration.;
+    private int temp1 = 1;
+
     final int btnNONE = 0, btnLEFT = 1, btnRIGHT = 3;
 
+    private GreenfootImage texture  = new GreenfootImage("dornier.png");
+
     public void act() {
+        if (temp1 == 1) {
+            texture.scale(40,40);
+            setImage(texture);
+            System.out.println("Set texture.");
+            temp1--;
+        }
+
         if (Greenfoot.isKeyDown("w")){
             setLocation(getX(), getY() - 1);
         } else if (Greenfoot.isKeyDown("s")) {
