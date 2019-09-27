@@ -39,7 +39,7 @@ public class Dornier217 extends Actor {
                 int XRight = Greenfoot.getMouseInfo().getX();
                 int YRight = Greenfoot.getMouseInfo().getY();
                 GameAPI.XYtoGrid(XRight, YRight);
-                GameAPI.GridToXY(GameAPI.mouse);
+                GameAPI.GridToXY(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
                 //System.out.println(DemoApp.mouseClickXRight);
                 //System.out.println(DemoApp.mouseClickYRight);
             }
