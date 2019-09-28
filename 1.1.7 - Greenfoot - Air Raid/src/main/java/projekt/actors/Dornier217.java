@@ -11,9 +11,9 @@ public class Dornier217 extends Actor {
     //Variable declaration.;
     private int temp1 = 1;
 
-    final int btnNONE = 0, btnLEFT = 1, btnRIGHT = 3;
-
     private GreenfootImage texture  = new GreenfootImage("dornier.png");
+
+    final int btnNONE = 0, btnLEFT = 1, btnRIGHT = 3;
 
     public void act() {
         if (temp1 == 1) {
@@ -23,7 +23,7 @@ public class Dornier217 extends Actor {
             temp1--;
         }
 
-        if (Greenfoot.isKeyDown("w")){
+        if (Greenfoot.isKeyDown("w")){ // Movement testing.
             setLocation(getX(), getY() - 1);
         } else if (Greenfoot.isKeyDown("s")) {
             setLocation(getX(), getY() + 1);
@@ -33,7 +33,7 @@ public class Dornier217 extends Actor {
             setLocation(getX() + 1, getY());
         }
 
-        MouseInfo mouse = Greenfoot.getMouseInfo();
+        MouseInfo mouse = Greenfoot.getMouseInfo(); //Core movement.
         if (Greenfoot.mousePressed(null) && Greenfoot.mouseClicked(this)) {
             int button = mouse.getButton();
             if (button == btnLEFT) System.out.println("Left");
@@ -53,24 +53,13 @@ public class Dornier217 extends Actor {
                 int YRight = Greenfoot.getMouseInfo().getY();
                 GameAPI.XYtoGrid(XRight, YRight);
                 GameAPI.GridToXY(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
+                setLocation(GameAPI.placementX, GameAPI.placementY);
                 //System.out.println(DemoApp.mouseClickXRight);
                 //System.out.println(DemoApp.mouseClickYRight);
             }
         }
-
-
-
-
-        /*
-
-
-        if (Greenfoot.mouseClicked(this) && DemoApp.canDetectXY) {
-            DemoApp.canDetectXY = false;
-            GameAPI.getTargetGrid();
-            System.out.println("Clicked");
-            System.out.println(DemoApp.canDetectXY);
-        }*/
     }
+
     public static void fly() {
 
     }

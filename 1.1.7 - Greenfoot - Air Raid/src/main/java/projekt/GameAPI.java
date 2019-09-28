@@ -9,13 +9,8 @@ public class GameAPI extends Actor{
     public static int mouseClickXgridResult;
     public static int mouseClickYgridResult;
 
-    private static int placementX;
-    private static int placementY;
-
-    private static int lowerXlimit;
-    private static int upperXlimit;
-    private static int lowerYlimit;
-    private static int upperYlimit;
+    public static int placementX;
+    public static int placementY;
 
     public GameAPI() { // A custom mini API for the game.
         System.out.println("MEME");
@@ -151,10 +146,89 @@ public class GameAPI extends Actor{
     }
 
     public static void GridToXY(int GridX, int GridY) { // Converts grids to coordinates for placement
+        if (GridX == 1) {
+            placementX = 340;
+        } else if (GridX == 2) {
+            placementX = 380;
+        } else if (GridX == 3) {
+            placementX = 420;
+        } else if (GridX == 4) {
+            placementX = 460;
+        } else if (GridX == 5) {
+            placementX = 500;
+        } else if (GridX == 6) {
+            placementX = 540;
+        } else if (GridX == 7) {
+            placementX = 580;
+        } else if (GridX == 8) {
+            placementX = 620;
+        } else if (GridX == 9) {
+            placementX = 660;
+        } else if (GridX == 10) {
+            placementX = 700;
+        } else if (GridX == 11) {
+            placementX = 740;
+        } else if (GridX == 12) {
+            placementX = 780;
+        } else if (GridX == 13) {
+            placementX = 820;
+        } else if (GridX == 14) {
+            placementX = 860;
+        } else if (GridX == 15) {
+            placementX = 900;
+        } else if (GridX == 16) {
+            placementX = 940;
+        } else if (GridX == 17) {
+            placementX = 980;
+        } else if (GridX == 18) {
+            placementX = 1020;
+        } else if (GridX == 19) {
+            placementX = 1060;
+        } else if (GridX == 20) {
+            placementX = 1100;
+        }
+
+
+        if (GridY == 1) {
+            placementY = 20;
+        } else if (GridY == 2) {
+            placementY = 60;
+        } else if (GridY == 3) {
+            placementY = 100;
+        } else if (GridY == 4) {
+            placementY = 140;
+        } else if (GridY == 5) {
+            placementY = 180;
+        } else if (GridY == 6) {
+            placementY = 220;
+        } else if (GridY == 7) {
+            placementY = 260;
+        } else if (GridY == 8) {
+            placementY = 300;
+        } else if (GridY == 9) {
+            placementY = 340;
+        } else if (GridY == 10) {
+            placementY = 380;
+        } else if (GridY == 11) {
+            placementY = 420;
+        } else if (GridY == 12) {
+            placementY = 460;
+        } else if (GridY == 13) {
+            placementY = 500;
+        } else if (GridY == 14) {
+            placementY = 540;
+        } else if (GridY == 15) {
+            placementY = 580;
+        }
+
         System.out.println("(" + GridX + ", " + GridY + ")");
     }
 
     public static void constructBuilding(int GridX, int GridY) { // Places buildings in marked grids.
 
+    }
+
+    public static void moveAnimation() {
+        
     }
 }

@@ -1,0 +1,14 @@
+TO-DO LIST:
+
+> Object creation. Done.
+> Grid-locking. Use XYToGrid and GridToXY. Done.
+Create Attack objects.
+> Fleet stacking. Detect if there are two objects in one grid.
+> Fleet display. Displays the selected fleet
+>current object display.
+> Movement animation. Points at target location then moves in frames.
+
+NOTE:
+
+> Fleet system may be abandoned and changed to no-stack system. Detects if target location has object. If so, cant move, if no, then move.
+> May need mathematical triangulation to determine vectors.
