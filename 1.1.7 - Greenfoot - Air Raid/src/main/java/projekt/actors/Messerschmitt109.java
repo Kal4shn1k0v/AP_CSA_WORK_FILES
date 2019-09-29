@@ -42,7 +42,7 @@ public class Messerschmitt109 extends Actor {
                 int YRight = Greenfoot.getMouseInfo().getY();
                 GameAPI.XYtoGrid(XRight, YRight);
                 GameAPI.GridToXY(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
-                setLocation(GameAPI.placementX, GameAPI.placementY);
+                this.setLocation(GameAPI.placementX, GameAPI.placementY);
                 //System.out.println(DemoApp.mouseClickXRight);
                 //System.out.println(DemoApp.mouseClickYRight);
             }

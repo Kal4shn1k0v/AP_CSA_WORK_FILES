@@ -10,10 +10,10 @@ import projekt.GameAPI;
 public class Dornier217 extends Actor {
     //Variable declaration.;
     private int temp1 = 1;
-
-    private GreenfootImage texture  = new GreenfootImage("dornier.png");
-
     final int btnNONE = 0, btnLEFT = 1, btnRIGHT = 3;
+
+    //Sets texture.
+    private GreenfootImage texture  = new GreenfootImage("dornier.png");
 
     public void act() {
         if (temp1 == 1) {
@@ -53,7 +53,12 @@ public class Dornier217 extends Actor {
                 int YRight = Greenfoot.getMouseInfo().getY();
                 GameAPI.XYtoGrid(XRight, YRight);
                 GameAPI.GridToXY(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
-                setLocation(GameAPI.placementX, GameAPI.placementY);
+                if (!GameAPI.outOfBounds) {
+                    this.setLocation(GameAPI.placementX, GameAPI.placementY);
+                } else if (GameAPI.outOfBounds) {
+                    GameAPI.outOfBounds = false;
+                    GameAPI.placementError("Out of bounds!");
+                }
                 //System.out.println(DemoApp.mouseClickXRight);
                 //System.out.println(DemoApp.mouseClickYRight);
             }

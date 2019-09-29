@@ -3,12 +3,13 @@ package projekt;
 import greenfoot.*;
 import projekt.actors.Heinkel274;
 
+import javax.swing.*;
+
 public class GameAPI extends Actor{
-
-
+    //Variable declaration
+    public static boolean outOfBounds = false;
     public static int mouseClickXgridResult;
     public static int mouseClickYgridResult;
-
     public static int placementX;
     public static int placementY;
 
@@ -73,6 +74,8 @@ public class GameAPI extends Actor{
             mouseClickYgridResult = 2;
         } else if (40 > coordYLeft && coordYLeft > 0) {
             mouseClickYgridResult = 1;
+        } else if (0 > coordYLeft) {
+            mouseClickYgridResult = 0;
         }
 
         if (1600 > coordXLeft && coordXLeft > 1560) {
@@ -139,6 +142,8 @@ public class GameAPI extends Actor{
             mouseClickXgridResult = 2;
         } else if (360 > coordXLeft && coordXLeft > 320) {
             mouseClickXgridResult = 1;
+        } else if ( 320 > coordXLeft) {
+            mouseClickXgridResult = 0;
         }
 
         //System.out.println(mouseClickXgridResult); // Debug data
@@ -186,8 +191,34 @@ public class GameAPI extends Actor{
             placementX = 1060;
         } else if (GridX == 20) {
             placementX = 1100;
+        } else if (GridX == 21) {
+            placementX = 1140;
+        } else if (GridX == 22) {
+            placementX = 1180;
+        } else if (GridX == 23) {
+            placementX = 1220;
+        } else if (GridX == 24) {
+            placementX = 1260;
+        } else if (GridX == 25) {
+            placementX = 1300;
+        } else if (GridX == 26) {
+            placementX = 1340;
+        } else if (GridX == 27) {
+            placementX = 1380;
+        } else if (GridX == 28) {
+            placementX = 1420;
+        } else if (GridX == 29) {
+            placementX = 1460;
+        } else if (GridX == 30) {
+            placementX = 1500;
+        } else if (GridX == 31) {
+            placementX = 1540;
+        } else if (GridX == 32) {
+            placementX = 1580;
+        } else if (GridX == 0) {
+            outOfBounds = true;
+            System.out.println("Out of bounds!");
         }
-
 
         if (GridY == 1) {
             placementY = 20;
@@ -219,16 +250,51 @@ public class GameAPI extends Actor{
             placementY = 540;
         } else if (GridY == 15) {
             placementY = 580;
+        } else if (GridY == 16) {
+            placementY = 620;
+        } else if (GridY == 17) {
+            placementY = 660;
+        } else if (GridY == 18) {
+            placementY = 700;
+        } else if (GridY == 19) {
+            placementY = 740;
+        } else if (GridY == 20) {
+            placementY = 780;
+        } else if (GridY == 21) {
+            placementY = 820;
+        } else if (GridY == 22) {
+            placementY = 860;
+        } else if (GridY == 23) {
+            placementY = 900;
+        } else if (GridY == 24) {
+            placementY = 940;
+        } else if (GridY == 25) {
+            placementY = 980;
+        } else if (GridY == 0) {
+            outOfBounds = true;
+            System.out.println("Out of bounds!");
         }
 
-        System.out.println("(" + GridX + ", " + GridY + ")");
+        if (!outOfBounds) {
+            System.out.println("(" + GridX + ", " + GridY + ")");
+        } else if (outOfBounds) {
+            System.out.println("Out of Bounds");
+        }
+    }
+
+    public static void placementError(String title) { //Message shown out of bounds.
+        JOptionPane.showMessageDialog(null, "The selected destination is out of bounds!", title, JOptionPane.INFORMATION_MESSAGE);
     }
 
     public static void constructBuilding(int GridX, int GridY) { // Places buildings in marked grids.
 
     }
 
-    public static void moveAnimation() {
+    public static void moveAnimation() { //Makes move animations.
         
+    }
+
+    public static void detectObjectInGrid() { //Detects if target grid has object.
+
     }
 }

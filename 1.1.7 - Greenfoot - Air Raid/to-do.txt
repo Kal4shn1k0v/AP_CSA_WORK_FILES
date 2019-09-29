@@ -2,13 +2,17 @@ TO-DO LIST:
 
 > Object creation. Done.
 > Grid-locking. Use XYToGrid and GridToXY. Done.
-Create Attack objects.
+> Create out-of-bounds system. Done.
+> Create target objects.
 > Fleet stacking. Detect if there are two objects in one grid.
-> Fleet display. Displays the selected fleet
->current object display.
-> Movement animation. Points at target location then moves in frames.
+> Fleet display. Displays the currently selected fleet by using objects.
+> Movement animation. Points at target location then moves in a total of 6 frames.
 
 NOTE:
 
-> Fleet system may be abandoned and changed to no-stack system. Detects if target location has object. If so, cant move, if no, then move.
+> Fleet system may be abandoned and changed to no-stack system. Detects if target location has object. If so, cant move, if no, then move. See https://www.greenfoot.org/topics/57836/0 for more info.
 > May need mathematical triangulation to determine vectors.
+
+POSSIBLE ADDITIONS:
+
+> Resolution settings.

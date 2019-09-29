@@ -57,6 +57,6 @@ public class MyWorld extends World {
 
     private  void addVehicles() {
         addObject(new Dornier217(), 500, 500);
-        addObject(new Messerschmitt262(), 600, 600);
+        // addObject(new Messerschmitt262(), 600, 600);
     }
 }
