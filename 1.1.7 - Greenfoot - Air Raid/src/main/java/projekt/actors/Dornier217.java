@@ -10,6 +10,8 @@ import projekt.GameAPI;
 public class Dornier217 extends Actor {
     //Variable declaration.;
     private int temp1 = 1;
+    private int temp2 = 0;
+    private boolean selectedThis = false;
     final int btnNONE = 0, btnLEFT = 1, btnRIGHT = 3;
 
     //Sets texture.
@@ -22,8 +24,8 @@ public class Dornier217 extends Actor {
             System.out.println("Set texture.");
             temp1--;
         }
-
-        if (Greenfoot.isKeyDown("w")){ // Movement testing.
+/*
+        if (Greenfoot.isKeyDown("w")){ // Movement testing. Not used.
             setLocation(getX(), getY() - 1);
         } else if (Greenfoot.isKeyDown("s")) {
             setLocation(getX(), getY() + 1);
@@ -31,7 +33,7 @@ public class Dornier217 extends Actor {
             setLocation(getX() - 1, getY());
         } else if (Greenfoot.isKeyDown("d")) {
             setLocation(getX() + 1, getY());
-        }
+        } */
 
         MouseInfo mouse = Greenfoot.getMouseInfo(); //Core movement.
         if (Greenfoot.mousePressed(null) && Greenfoot.mouseClicked(this)) {
@@ -39,6 +41,7 @@ public class Dornier217 extends Actor {
             if (button == btnLEFT) System.out.println("Left");
             if (button == btnRIGHT) System.out.println("Right");
         }
+
         if (Greenfoot.mouseClicked(null)) {
             int button = mouse.getButton();
             if (button == btnLEFT && Greenfoot.mouseClicked(this)) {
@@ -47,16 +50,19 @@ public class Dornier217 extends Actor {
                 //System.out.println(DemoApp.mouseClickXLeft);
                 //System.out.println(DemoApp.mouseClickYLeft);
                 GameAPI.XYtoGrid(XLeft, YLeft);
+                selectedThis = true;
             }
-            if (button == btnRIGHT) {
+            if (button == btnRIGHT && selectedThis) {
                 int XRight = Greenfoot.getMouseInfo().getX();
                 int YRight = Greenfoot.getMouseInfo().getY();
                 GameAPI.XYtoGrid(XRight, YRight);
                 GameAPI.GridToXY(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
                 if (!GameAPI.outOfBounds) {
                     this.setLocation(GameAPI.placementX, GameAPI.placementY);
+                    selectedThis = false;
                 } else if (GameAPI.outOfBounds) {
                     GameAPI.outOfBounds = false;
+                    selectedThis = false;
                     GameAPI.placementError("Out of bounds!");
                 }
                 //System.out.println(DemoApp.mouseClickXRight);

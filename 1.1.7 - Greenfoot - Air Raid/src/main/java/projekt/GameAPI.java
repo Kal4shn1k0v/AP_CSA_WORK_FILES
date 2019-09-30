@@ -12,6 +12,9 @@ public class GameAPI extends Actor{
     public static int mouseClickYgridResult;
     public static int placementX;
     public static int placementY;
+    public static boolean isFriendlyTerritory = false;
+    private static boolean XFriendly = false;
+    private static boolean YFriendly = false;
 
     public GameAPI() { // A custom mini API for the game.
         System.out.println("MEME");
@@ -296,5 +299,28 @@ public class GameAPI extends Actor{
 
     public static void detectObjectInGrid() { //Detects if target grid has object.
 
+    }
+
+    public static void placementControl() {
+        System.out.println("Placement check");
+        placementControlCheck();
+        if (XFriendly && YFriendly) {
+            isFriendlyTerritory = true;
+        }
+    }
+
+    public static void placementControlCheck() {
+        XFriendly = true;
+        YFriendly = true;
+        /*
+        if (mouseClickXgridResult == 1) {
+            XFriendly = true;
+        } else {
+            XFriendly = false;
+        } */
+    }
+
+    public static void territoryError(String title) { //Message shown out of bounds.
+        JOptionPane.showMessageDialog(null, "The selected destination is in a hostile or invalid territory!", title, JOptionPane.INFORMATION_MESSAGE);
     }
 }

@@ -7,10 +7,10 @@ import greenfoot.MouseInfo;
 import projekt.GameAPI;
 
 public class Messerschmitt262 extends Actor { //Just a sekrit easter egg.
-    //Variabel declaration.
+    //Variable declaration.
     private int temp1 = 1;
     private int temp2 = 0;
-    private boolean temp3 = false;
+    private boolean selectedThis = false;
     final int btnNONE = 0, btnLEFT = 1, btnRIGHT = 3;
 
     private GreenfootImage texture  = new GreenfootImage("dornier.png");
@@ -29,6 +29,7 @@ public class Messerschmitt262 extends Actor { //Just a sekrit easter egg.
             if (button == btnLEFT) System.out.println("Left");
             if (button == btnRIGHT) System.out.println("Right");
         }
+
         if (Greenfoot.mouseClicked(null)) {
             int button = mouse.getButton();
             if (button == btnLEFT && Greenfoot.mouseClicked(this)) {
@@ -37,13 +38,21 @@ public class Messerschmitt262 extends Actor { //Just a sekrit easter egg.
                 //System.out.println(DemoApp.mouseClickXLeft);
                 //System.out.println(DemoApp.mouseClickYLeft);
                 GameAPI.XYtoGrid(XLeft, YLeft);
+                selectedThis = true;
             }
-            if (button == btnRIGHT) {
+            if (button == btnRIGHT && selectedThis) {
                 int XRight = Greenfoot.getMouseInfo().getX();
                 int YRight = Greenfoot.getMouseInfo().getY();
                 GameAPI.XYtoGrid(XRight, YRight);
                 GameAPI.GridToXY(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
-                setLocation(GameAPI.placementX, GameAPI.placementY);
+                if (!GameAPI.outOfBounds) {
+                    this.setLocation(GameAPI.placementX, GameAPI.placementY);
+                    selectedThis = false;
+                } else if (GameAPI.outOfBounds) {
+                    GameAPI.outOfBounds = false;
+                    selectedThis = false;
+                    GameAPI.placementError("Out of bounds!");
+                }
                 //System.out.println(DemoApp.mouseClickXRight);
                 //System.out.println(DemoApp.mouseClickYRight);
             }

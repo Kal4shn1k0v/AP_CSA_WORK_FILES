@@ -18,6 +18,8 @@ public class DemoApp extends GreenfootScenarioApplication {
     public static int clickSide;
 
     public static void main(String[] args) {
+
+
         resolution();
 
         GreenfootScenarioApplication.launch(args);

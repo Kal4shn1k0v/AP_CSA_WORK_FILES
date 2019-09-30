@@ -3,7 +3,7 @@ package projekt.buttons;
 import greenfoot.Actor;
 import greenfoot.GreenfootImage;
 
-public class Luftflotte extends Actor {
+public class Luftflotte extends Actor { //Unused.
     private GreenfootImage texture = new GreenfootImage("luftlotte.png");
 
     public Luftflotte() {
