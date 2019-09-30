@@ -3,15 +3,15 @@ package projekt.worlds;
 import greenfoot.Greenfoot;
 import greenfoot.MouseInfo;
 import greenfoot.World;
+import projekt.Data;
 import projekt.GameAPI;
-import projekt.icons.Airfield;
+import projekt.icons.*;
 import projekt.actors.Dornier217;
-import projekt.icons.EnemyFabrik;
-import projekt.icons.Fabrik;
 import projekt.actors.Messerschmitt262;
 import projekt.buttons.*;
 
 public class MyWorld extends World {
+    //Declare variables.
     final int btnNONE = 0, btnLEFT = 1, btnRIGHT = 3;
 
     public MyWorld() {
@@ -57,6 +57,7 @@ public class MyWorld extends World {
     private void addObjects() {
         addButtons();
         addVehicles();
+        addScore();
     }
 
     private void addButtons() {
@@ -99,8 +100,19 @@ public class MyWorld extends World {
         EnemyFabrik.enemyProductionPower = 10;
     }
 
-    private  void addVehicles() {
+    private void addVehicles() {
         addObject(new Dornier217(), 500, 500);
         addObject(new Messerschmitt262(), 600, 600);
+    }
+
+    private void addScore() {
+        Score1 score1 = new Score1(Data.productionPotency);
+        addObject(score1, 150, 200);
+        Score2 score2 = new Score2(Data.productionPoints);
+        addObject(score2, 150, 250);
+        Score3 score3 = new Score3(Data.enemyPotency);
+        addObject(score3, 150, 300);
+        Score4 score4 = new Score4(Data.fuelSupply);
+        addObject(score4, 150, 350);
     }
 }

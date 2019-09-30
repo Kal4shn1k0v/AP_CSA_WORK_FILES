@@ -1,14 +1,16 @@
-package projekt.buttons;
+package projekt;
 
 import greenfoot.Actor;
 import greenfoot.GreenfootImage;
+import projekt.icons.Score1;
+import projekt.icons.Score2;
 
 public class Data extends Actor {
     //Variable declaration.
-    private static int productionPotency;
-    private static int productionPoints;
-    private static int enemyPotency;
-    private static int fuelSupply;
+    public static int productionPotency;
+    public static int productionPoints;
+    public static int enemyPotency;
+    public static int fuelSupply;
 
     private GreenfootImage productionPotencyBar;
     private GreenfootImage productionPointsBar;

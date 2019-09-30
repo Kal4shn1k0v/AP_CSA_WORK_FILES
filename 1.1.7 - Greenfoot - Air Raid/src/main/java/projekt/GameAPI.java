@@ -289,10 +289,6 @@ public class GameAPI extends Actor{
         JOptionPane.showMessageDialog(null, "The selected destination is out of bounds!", title, JOptionPane.INFORMATION_MESSAGE);
     }
 
-    public static void constructBuilding(int GridX, int GridY) { // Places buildings in marked grids.
-
-    }
-
     public static void moveAnimation() { //Makes move animations.
         
     }

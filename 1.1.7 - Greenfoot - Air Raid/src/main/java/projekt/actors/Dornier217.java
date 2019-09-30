@@ -15,12 +15,13 @@ public class Dornier217 extends Actor {
     final int btnNONE = 0, btnLEFT = 1, btnRIGHT = 3;
 
     //Sets texture.
-    private GreenfootImage texture  = new GreenfootImage("dornier.png");
+    private GreenfootImage texture1  = new GreenfootImage("dornier.png");
+    private GreenfootImage texture2  = new GreenfootImage("explosion.png");
 
     public void act() {
         if (temp1 == 1) {
-            texture.scale(40,40);
-            setImage(texture);
+            texture1.scale(40,40);
+            setImage(texture1);
             System.out.println("Set texture.");
             temp1--;
         }
