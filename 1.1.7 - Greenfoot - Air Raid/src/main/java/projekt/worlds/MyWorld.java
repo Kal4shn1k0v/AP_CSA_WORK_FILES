@@ -49,6 +49,7 @@ public class MyWorld extends World {
                 System.out.println("No right");
             }
         } */
+        addEnemyVehicles();
     }
 
     private void prepare() {
@@ -105,7 +106,7 @@ public class MyWorld extends World {
         int xGrid1 = (int) (Math.random() * (19 - 5)) + 5;
         int yGrid1 = (int) (Math.random() * (14 - 3)) + 3;
 
-        if (Greenfoot.getRandomNumber(500) < 1) {
+        if (Greenfoot.getRandomNumber(50) < 1) {
             GameAPI.GridToXY(xGrid1, yGrid1);
             addObject(new Spitfire(), GameAPI.placementX, GameAPI.placementY);
         }
@@ -113,14 +114,14 @@ public class MyWorld extends World {
         int xGrid2 = (int) (Math.random() * (19 - 5)) + 5;
         int yGrid2 = (int) (Math.random() * (14 - 3)) + 3;
 
-        if (Greenfoot.getRandomNumber(1000) < 1){
+        if (Greenfoot.getRandomNumber(100) < 1){
             GameAPI.GridToXY(xGrid2, yGrid2);
             addObject(new EnemyFabrik(), GameAPI.placementX, GameAPI.placementY);
         }
     }
 
     private void addVehicles() { //Added vehicles for testing.
-        addObject(new Dornier217(), 500, 500);
+        //addObject(new Dornier217(), 500, 500);
         //addObject(new Messerschmitt262(), 600, 600);
     }
 

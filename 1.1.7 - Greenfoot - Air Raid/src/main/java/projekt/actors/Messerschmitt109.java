@@ -14,7 +14,7 @@ public class Messerschmitt109 extends Actor {
     final int btnNONE = 0, btnLEFT = 1, btnRIGHT = 3;
 
     //Sets texture.
-    private GreenfootImage texture1  = new GreenfootImage("dornier.png");
+    private GreenfootImage texture1  = new GreenfootImage("messerschmitt.png");
     private GreenfootImage texture2  = new GreenfootImage("explosion.png");
 
     public void act() {

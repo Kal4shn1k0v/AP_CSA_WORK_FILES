@@ -4,7 +4,8 @@ TO-DO LIST:
 > Grid-locking. Use XYToGrid and GridToXY. Done.
 > Create out-of-bounds system. Done.
 > Create friendly placement system.
-> Create target objects.
+> Create target objects. Done
+> Create enemies.
 > Fleet stacking. Detect if there are two objects in one grid. Skipped.
 > Fleet display. Displays the currently selected fleet by using objects. Skipped.
 > Movement animation. Points at target location then moves in a total of 6 frames.

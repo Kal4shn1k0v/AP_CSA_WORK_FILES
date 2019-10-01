@@ -51,14 +51,17 @@ public class MesserschmittIcon extends Actor {
                 GameAPI.XYtoGrid(XRight, YRight);
                 GameAPI.GridToXY(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
                 GameAPI.airfieldPlacementControl(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
-                if (!GameAPI.outOfBounds && GameAPI.isFriendlyTerritory) {
+                if (!GameAPI.outOfBounds && GameAPI.isAnAirfield) {
                     System.out.println("placement");
                     getWorld().addObject(new Messerschmitt109(), GameAPI.placementX, GameAPI.placementY);
                     selectedThis = false;
+                    GameAPI.outOfBounds = false;
+                    GameAPI.isAnAirfield = false;
                     GameAPI.isFriendlyTerritory = false;
                 } else if (GameAPI.outOfBounds) {
                     selectedThis = false;
                     GameAPI.outOfBounds = false;
+                    GameAPI.isAnAirfield = false;
                     GameAPI.isFriendlyTerritory = false;
                     GameAPI.territoryError("Invalid Territory!");
                 }
