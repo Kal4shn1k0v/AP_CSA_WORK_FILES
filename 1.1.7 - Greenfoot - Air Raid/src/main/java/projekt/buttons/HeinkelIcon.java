@@ -6,7 +6,9 @@ import greenfoot.GreenfootImage;
 import greenfoot.MouseInfo;
 import projekt.GameAPI;
 import projekt.actors.Heinkel274;
+import projekt.actors.Spitfire;
 import projekt.icons.Airfield;
+import projekt.worlds.MyWorld;
 
 public class HeinkelIcon extends Actor {
     //Variable declaration.
@@ -14,12 +16,13 @@ public class HeinkelIcon extends Actor {
     private boolean selectedThis = false;
     final int btnNONE = 0, btnLEFT = 1, btnRIGHT = 3;
 
-    private GreenfootImage texture  = new GreenfootImage("heinkel.png");
+    private GreenfootImage texture1  = new GreenfootImage("heinkel.png");
+    private GreenfootImage texture2  = new GreenfootImage("explosion.png");
 
     public void act() {
         if (temp1 == 1) {
-            texture.scale(40,40);
-            setImage(texture);
+            texture1.scale(40,40);
+            setImage(texture1);
             System.out.println("Set texture.");
             temp1--;
         }
@@ -50,7 +53,7 @@ public class HeinkelIcon extends Actor {
                 int YRight = Greenfoot.getMouseInfo().getY();
                 GameAPI.XYtoGrid(XRight, YRight);
                 GameAPI.GridToXY(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
-                GameAPI.placementControl();
+                GameAPI.territoryPlacementControl(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
                 if (!GameAPI.outOfBounds && GameAPI.isFriendlyTerritory) {
                     System.out.println("placement");
                     getWorld().addObject(new Heinkel274(), GameAPI.placementX, GameAPI.placementY);

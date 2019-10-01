@@ -5,25 +5,10 @@ import greenfoot.GreenfootImage;
 import projekt.icons.Score1;
 import projekt.icons.Score2;
 
-public class Data extends Actor {
+public class Data{ //Used to store player data
     //Variable declaration.
-    public static int productionPotency;
-    public static int productionPoints;
-    public static int enemyPotency;
-    public static int fuelSupply;
-
-    private GreenfootImage productionPotencyBar;
-    private GreenfootImage productionPointsBar;
-    private GreenfootImage enemyPotencyBar;
-
-    public Data(int ProductionPotency, int ProductionPoints, int EnemyPotency, int FuelSupply) {
-        productionPotency = ProductionPotency;
-        productionPoints = ProductionPoints;
-        enemyPotency = EnemyPotency;
-        fuelSupply = FuelSupply;
-    }
-
-    public void act() { //Not used.
-
-    }
+    public static int productionPotency = 9;
+    public static int productionPoints = 20000;
+    public static int enemyPotency = 100;
+    public static int fuelSupply = 20;
 }

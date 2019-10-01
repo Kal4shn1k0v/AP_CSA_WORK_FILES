@@ -50,7 +50,7 @@ public class MesserschmittIcon extends Actor {
                 int YRight = Greenfoot.getMouseInfo().getY();
                 GameAPI.XYtoGrid(XRight, YRight);
                 GameAPI.GridToXY(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
-                GameAPI.placementControl();
+                GameAPI.airfieldPlacementControl(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
                 if (!GameAPI.outOfBounds && GameAPI.isFriendlyTerritory) {
                     System.out.println("placement");
                     getWorld().addObject(new Messerschmitt109(), GameAPI.placementX, GameAPI.placementY);

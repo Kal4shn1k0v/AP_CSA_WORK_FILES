@@ -60,5 +60,13 @@ public class Heinkel274 extends Actor {
                 //System.out.println(DemoApp.mouseClickYRight);
             }
         }
+
+        if (this.isTouching(Spitfire.class)) {
+            texture2.scale(40,40);
+            setImage(texture2);
+            if (getImage().equals(texture1)) {
+                getWorld().removeObject(this);
+            }
+        }
     }
 }

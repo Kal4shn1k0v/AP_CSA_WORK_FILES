@@ -5,6 +5,7 @@ import greenfoot.MouseInfo;
 import greenfoot.World;
 import projekt.Data;
 import projekt.GameAPI;
+import projekt.actors.Spitfire;
 import projekt.icons.*;
 import projekt.actors.Dornier217;
 import projekt.actors.Messerschmitt262;
@@ -62,8 +63,8 @@ public class MyWorld extends World {
 
     private void addButtons() {
         addObject(new MesserschmittIcon(), 50, 50);
-        addObject(new HeinkelIcon(), 150, 50);
-        addObject(new DornierIcon(), 100, 50);
+        addObject(new HeinkelIcon(), 100, 50);
+        //addObject(new DornierIcon(), 100, 50);
         addObject(new AddFactory(), 50, 100);
         //addObject(new Luftflotte(), 72, 638);
         addMisc();
@@ -100,9 +101,27 @@ public class MyWorld extends World {
         EnemyFabrik.enemyProductionPower = 10;
     }
 
-    private void addVehicles() {
+    private void addEnemyVehicles() {
+        int xGrid1 = (int) (Math.random() * (19 - 5)) + 5;
+        int yGrid1 = (int) (Math.random() * (14 - 3)) + 3;
+
+        if (Greenfoot.getRandomNumber(500) < 1) {
+            GameAPI.GridToXY(xGrid1, yGrid1);
+            addObject(new Spitfire(), GameAPI.placementX, GameAPI.placementY);
+        }
+
+        int xGrid2 = (int) (Math.random() * (19 - 5)) + 5;
+        int yGrid2 = (int) (Math.random() * (14 - 3)) + 3;
+
+        if (Greenfoot.getRandomNumber(1000) < 1){
+            GameAPI.GridToXY(xGrid2, yGrid2);
+            addObject(new EnemyFabrik(), GameAPI.placementX, GameAPI.placementY);
+        }
+    }
+
+    private void addVehicles() { //Added vehicles for testing.
         addObject(new Dornier217(), 500, 500);
-        addObject(new Messerschmitt262(), 600, 600);
+        //addObject(new Messerschmitt262(), 600, 600);
     }
 
     private void addScore() {
@@ -114,5 +133,9 @@ public class MyWorld extends World {
         addObject(score3, 150, 300);
         Score4 score4 = new Score4(Data.fuelSupply);
         addObject(score4, 150, 350);
+    }
+
+    public  void updateScore() {
+        
     }
 }

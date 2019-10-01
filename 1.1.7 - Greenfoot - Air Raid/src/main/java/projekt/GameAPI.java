@@ -13,8 +13,8 @@ public class GameAPI extends Actor{
     public static int placementX;
     public static int placementY;
     public static boolean isFriendlyTerritory = false;
-    private static boolean XFriendly = false;
-    private static boolean YFriendly = false;
+    public static boolean isAnAirfield = false;
+    private static String[] friendlyCoordinates;
 
     public GameAPI() { // A custom mini API for the game.
         System.out.println("MEME");
@@ -297,23 +297,66 @@ public class GameAPI extends Actor{
 
     }
 
-    public static void placementControl() {
-        System.out.println("Placement check");
-        placementControlCheck();
-        if (XFriendly && YFriendly) {
+    public static void territoryPlacementControl(int GridX, int GridY) {
+        if (GridX == 29 || GridX == 30 || GridY == 31 || GridY == 32) {
             isFriendlyTerritory = true;
+        } else if (GridY == 24 || GridY == 25) {
+            isFriendlyTerritory = true;
+        } else if (GridX == 8 && GridY == 23) {
+            isFriendlyTerritory = true;
+        } else if (GridX == 7 && GridY == 23) {
+            isFriendlyTerritory = true;
+        } else if (GridX >= 12 && GridY >= 21) {
+            isFriendlyTerritory = true;
+        } else if (GridX == 13 && GridY == 20) {
+            isFriendlyTerritory = true;
+        } else if (GridX == 13 && GridY == 19) {
+            isFriendlyTerritory = true;
+        } else if (GridX == 12 && GridY == 19) {
+            isFriendlyTerritory = true;
+        } else if (GridX == 12 && GridY == 20) {
+            isFriendlyTerritory = true;
+        } else if (GridX >= 17 && GridY >= 19) {
+            isFriendlyTerritory = true;
+        } else if (GridX >= 18 && GridY >= 18) {
+            isFriendlyTerritory = true;
+        } else if (GridX >= 22 && GridY >= 13) {
+            isFriendlyTerritory = true;
+        } else if (GridX >= 24 && GridY >= 12) {
+            isFriendlyTerritory = true;
+        } else if (GridX >= 16 && GridY >= 11) {
+            isFriendlyTerritory = true;
+        } else if (GridX >= 27 && GridY >= 9) {
+            isFriendlyTerritory = true;
+        } else if (GridX >= 28 && GridY >= 8) {
+            isFriendlyTerritory = true;
+        } else {
+            isAnAirfield = false;
         }
     }
 
-    public static void placementControlCheck() {
-        XFriendly = true;
-        YFriendly = true;
-        /*
-        if (mouseClickXgridResult == 1) {
-            XFriendly = true;
+    public static void airfieldPlacementControl(int GridX, int GridY) {
+        if (GridX == 29 && GridY == 13) {
+            isAnAirfield = true;
+        } else if (GridX == 29 && GridY == 7) {
+            isAnAirfield = true;
+        } else if (GridX == 25 && GridY == 15) {
+            isAnAirfield = true;
+        } else if (GridX == 22 && GridY == 13) {
+            isAnAirfield = true;
+        } else if (GridX == 24 && GridY == 21) {
+            isAnAirfield = true;
+        } else if (GridX == 17 && GridY == 19) {
+            isAnAirfield = true;
+        } else if (GridX == 12 && GridY == 19) {
+            isAnAirfield = true;
+        } else if (GridX == 7 && GridY == 23) {
+            isAnAirfield = true;
+        } else if (GridX == 3 && GridY == 24) {
+            isAnAirfield = true;
         } else {
-            XFriendly = false;
-        } */
+            isAnAirfield = false;
+        }
     }
 
     public static void territoryError(String title) { //Message shown out of bounds.
