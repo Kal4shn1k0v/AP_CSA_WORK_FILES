@@ -5,10 +5,8 @@ import greenfoot.MouseInfo;
 import greenfoot.World;
 import projekt.Data;
 import projekt.GameAPI;
-import projekt.actors.Spitfire;
+import projekt.actors.*;
 import projekt.icons.*;
-import projekt.actors.Dornier217;
-import projekt.actors.Messerschmitt262;
 import projekt.buttons.*;
 
 public class MyWorld extends World {
@@ -50,6 +48,7 @@ public class MyWorld extends World {
             }
         } */
         addEnemyVehicles();
+        updateScore();
     }
 
     private void prepare() {
@@ -57,9 +56,15 @@ public class MyWorld extends World {
     }
 
     private void addObjects() {
+        Greenfoot.setSpeed(35);
         addButtons();
         addVehicles();
         addScore();
+        addObject(new AirfieldEnemy(), AirfieldEnemy.locationX, AirfieldEnemy.locationY);
+        addObject(new Spitfire(), AirfieldEnemy.locationX, AirfieldEnemy.locationY);
+        addObject(new Spitfire(), AirfieldEnemy.locationX, AirfieldEnemy.locationY);
+        //addObject(new Lancaster(), AirfieldEnemy.locationX, AirfieldEnemy.locationY);
+        //addObject(new Lancaster(), AirfieldEnemy.locationX, AirfieldEnemy.locationY);
     }
 
     private void addButtons() {
@@ -103,10 +108,12 @@ public class MyWorld extends World {
     }
 
     private void addEnemyVehicles() {
+
+
         int xGrid1 = (int) (Math.random() * (19 - 5)) + 5;
         int yGrid1 = (int) (Math.random() * (14 - 3)) + 3;
 
-        if (Greenfoot.getRandomNumber(50) < 1) {
+        if (Greenfoot.getRandomNumber(1000) < 1) {
             GameAPI.GridToXY(xGrid1, yGrid1);
             addObject(new Spitfire(), GameAPI.placementX, GameAPI.placementY);
         }
@@ -114,7 +121,7 @@ public class MyWorld extends World {
         int xGrid2 = (int) (Math.random() * (19 - 5)) + 5;
         int yGrid2 = (int) (Math.random() * (14 - 3)) + 3;
 
-        if (Greenfoot.getRandomNumber(100) < 1){
+        if (Greenfoot.getRandomNumber(1000) < 1){
             GameAPI.GridToXY(xGrid2, yGrid2);
             addObject(new EnemyFabrik(), GameAPI.placementX, GameAPI.placementY);
         }
@@ -123,6 +130,8 @@ public class MyWorld extends World {
     private void addVehicles() { //Added vehicles for testing.
         //addObject(new Dornier217(), 500, 500);
         //addObject(new Messerschmitt262(), 600, 600);
+        //addObject(new Heinkel274(), 600, 600);
+        //addObject(new Spitfire(), 1580, 20);
     }
 
     private void addScore() {
@@ -136,7 +145,7 @@ public class MyWorld extends World {
         addObject(score4, 150, 350);
     }
 
-    public  void updateScore() {
-        
+    public void updateScore() {
+        addScore();
     }
 }

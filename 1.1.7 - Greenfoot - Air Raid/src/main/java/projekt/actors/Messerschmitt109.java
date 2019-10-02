@@ -4,6 +4,7 @@ import greenfoot.Actor;
 import greenfoot.Greenfoot;
 import greenfoot.GreenfootImage;
 import greenfoot.MouseInfo;
+import projekt.Data;
 import projekt.GameAPI;
 
 public class Messerschmitt109 extends Actor {
@@ -48,7 +49,63 @@ public class Messerschmitt109 extends Actor {
                 GameAPI.XYtoGrid(XRight, YRight);
                 GameAPI.GridToXY(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
                 if (!GameAPI.outOfBounds) {
+                    Data.fuelSupply--;
+                    GameAPI.moveAnimation(1, this.getX(), this.getY(), GameAPI.placementX, GameAPI.placementY);
+                    int X = GameAPI.placementX - this.getX();
+                    int Y = GameAPI.placementY - this.getY();
+                    System.out.println("X: " + X);
+                    System.out.println("Y: " + Y);
+                    System.out.println(GameAPI.actorAngle);
+                    if (X == 0 && Y > 0) {
+                        setRotation(GameAPI.actorAngle + 180);
+                    }
+                    if (X == 0 && Y < 0) {
+                        setRotation(GameAPI.actorAngle);
+                    }
+                    if (Y == 0 && X > 0) {
+                        setRotation(GameAPI.actorAngle + 0);
+                    }
+                    if (Y == 0 && X < 0) {
+                        setRotation(GameAPI.actorAngle + 180);
+                    }
+                    if (X > 0 && Y > 0) {
+                        setRotation(90 - GameAPI.actorAngle + 90);
+                    }
+                    if (X > 0 && Y < 0) {
+                        setRotation(GameAPI.actorAngle);
+                    }
+                    if (X < 0 && Y > 0) {
+                        setRotation(GameAPI.actorAngle + 180);
+                    } if (X < 0 && Y < 0) {
+                        setRotation(90 - GameAPI.actorAngle + 270);
+                    }
+                    System.out.println(GameAPI.actorAngle);
+                    GameAPI.actorAngle = 0;
+                    int initialX = this.getX();
+                    int initialY = this.getY();
+                    GameAPI.moveAnimation(1, initialX, initialY, GameAPI.placementX, GameAPI.placementY);
+                    this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                    this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                    Greenfoot.delay(1);
+                    GameAPI.moveAnimation(2, initialX, initialY, GameAPI.placementX, GameAPI.placementY);
+                    this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                    this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                    Greenfoot.delay(1);
+                    GameAPI.moveAnimation(3, initialX, initialY, GameAPI.placementX, GameAPI.placementY);
+                    this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                    this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                    Greenfoot.delay(1);
+                    GameAPI.moveAnimation(4, initialX, initialY, GameAPI.placementX, GameAPI.placementY);
+                    this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                    this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                    Greenfoot.delay(1);
+                    GameAPI.moveAnimation(5, initialX, initialY, GameAPI.placementX, GameAPI.placementY);
+                    this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                    this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                    Greenfoot.delay(1);
                     this.setLocation(GameAPI.placementX, GameAPI.placementY);
+                    System.out.println(GameAPI.intermediatePlacementX + " " + GameAPI.intermediatePlacementX);
+                    System.out.println(this.getX() + " " + this.getY());
                     selectedThis = false;
                 } else if (GameAPI.outOfBounds) {
                     GameAPI.outOfBounds = false;
@@ -66,6 +123,15 @@ public class Messerschmitt109 extends Actor {
             if (getImage().equals(texture1)) {
                 getWorld().removeObject(this);
             }
+        }
+    }
+
+    private void pause() {
+        try {
+            Thread.currentThread().sleep(500);
+        }
+        catch(InterruptedException ie) {
+            ie.printStackTrace();
         }
     }
 }

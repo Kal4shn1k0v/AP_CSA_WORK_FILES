@@ -7,7 +7,7 @@ import greenfoot.MouseInfo;
 import projekt.DemoApp;
 import projekt.GameAPI;
 
-public class Dornier217 extends Actor {
+public class Dornier217 extends Actor { //Disabled.
     //Variable declaration.;
     private int temp1 = 1;
     private int temp2 = 0;

@@ -63,7 +63,7 @@ public class MesserschmittIcon extends Actor {
                     GameAPI.outOfBounds = false;
                     GameAPI.isAnAirfield = false;
                     GameAPI.isFriendlyTerritory = false;
-                    GameAPI.territoryError("Invalid Territory!");
+                    //GameAPI.territoryError("Invalid Territory!");
                 }
             }
         }

@@ -11,6 +11,7 @@ import projekt.worlds.MyWorld;
 public class EnemyFabrik extends Actor {
     //Variable declaration.;
     private int temp1 = 1;
+    private int temp2 = 1;
     public static int enemyProductionPower;
 
     //Sets texture.
@@ -28,7 +29,11 @@ public class EnemyFabrik extends Actor {
         if (this.isTouching(Heinkel274.class)) {
             texture2.scale(40,40);
             setImage(texture2);
-            Data.enemyPotency = Data.enemyPotency - 5;
+            if (temp2 == 1) {
+                Data.enemyPotency = Data.enemyPotency - 5;
+                temp2--;
+
+            }
             if (getImage().equals(texture1)) {
                 getWorld().removeObject(this);
             }

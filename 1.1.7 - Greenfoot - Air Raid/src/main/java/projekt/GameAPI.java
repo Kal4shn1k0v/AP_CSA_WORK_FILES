@@ -5,6 +5,8 @@ import projekt.actors.Heinkel274;
 
 import javax.swing.*;
 
+import static java.lang.Math.abs;
+
 public class GameAPI extends Actor{
     //Variable declaration
     public static boolean outOfBounds = false;
@@ -12,6 +14,9 @@ public class GameAPI extends Actor{
     public static int mouseClickYgridResult;
     public static int placementX;
     public static int placementY;
+    public static int intermediatePlacementX;
+    public static int intermediatePlacementY;
+    public static int actorAngle;
     public static boolean isFriendlyTerritory = false;
     public static boolean isAnAirfield = false;
     private static String[] friendlyCoordinates;
@@ -289,15 +294,48 @@ public class GameAPI extends Actor{
         JOptionPane.showMessageDialog(null, "The selected destination is out of bounds!", title, JOptionPane.INFORMATION_MESSAGE);
     }
 
-    public static void moveAnimation() { //Makes move animations.
-        
+    public static void moveAnimation(int FrameNum, int InitialX, int InitialY, int FinalX, int FinalY) { //Makes move animations.
+        System.out.println("Animation" + FrameNum);
+        int totalFrameX = FinalX - InitialX;
+        int totalFrameY = FinalY - InitialY;
+        int frame1X = totalFrameX / 6;
+        int frame1Y = totalFrameY / 6;
+        int frame2X = totalFrameX / 6 * 2;
+        int frame2Y = totalFrameY / 6 * 2;
+        int frame3X = totalFrameX / 6 * 3;
+        int frame3Y = totalFrameY / 6 * 3;
+        int frame4X = totalFrameX / 6 * 4;
+        int frame4Y = totalFrameY / 6 * 4;
+        int frame5X = totalFrameX / 6 * 5;
+        int frame5Y = totalFrameY / 6 * 5;
+
+        if (FrameNum == 1) { //First frame.
+            intermediatePlacementX = frame1X + InitialX;
+            intermediatePlacementY = frame1Y + InitialY;
+        } else if (FrameNum ==2) { //second frame.
+            intermediatePlacementX = frame2X + InitialX;
+            intermediatePlacementY = frame2Y + InitialY;
+        } else if (FrameNum ==3) { //Third frame.
+            intermediatePlacementX = frame3X + InitialX;
+            intermediatePlacementY = frame3Y + InitialY;
+        } else if (FrameNum ==4) { //Fourth frame.
+            intermediatePlacementX = frame4X + InitialX;
+            intermediatePlacementY = frame4Y + InitialY;
+        } else if (FrameNum ==5) { //Fifth frame.
+            intermediatePlacementX = frame5X + InitialX;
+            intermediatePlacementY = frame5Y + InitialY;
+        }
+
+        int X = InitialX - FinalX;
+        int Y = InitialY - FinalY;
+        X = abs(X);
+        Y = abs(Y);
+        double rotation = Math.atan2(X, Y);
+        rotation = Math.toDegrees(rotation);
+        actorAngle = (int)rotation;
     }
 
-    public static void detectObjectInGrid() { //Detects if target grid has object.
-
-    }
-
-    public static void territoryPlacementControl(int GridX, int GridY) {
+    public static void territoryPlacementControl(int GridX, int GridY) { //Checks placement control.
         if (GridX == 29 || GridX == 30 || GridY == 31 || GridY == 32) {
             isFriendlyTerritory = true;
         } else if (GridY == 24 || GridY == 25) {

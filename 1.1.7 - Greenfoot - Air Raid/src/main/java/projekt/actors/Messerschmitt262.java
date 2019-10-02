@@ -6,7 +6,7 @@ import greenfoot.GreenfootImage;
 import greenfoot.MouseInfo;
 import projekt.GameAPI;
 
-public class Messerschmitt262 extends Actor { //Just a sekrit easter egg.
+public class Messerschmitt262 extends Actor { //Just a sekrit easter egg. Disabled.
     //Variable declaration.
     private int temp1 = 1;
     private int temp2 = 0;

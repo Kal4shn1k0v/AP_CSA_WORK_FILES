@@ -4,6 +4,7 @@ import greenfoot.Actor;
 import greenfoot.Greenfoot;
 import greenfoot.GreenfootImage;
 import greenfoot.MouseInfo;
+import projekt.Data;
 import projekt.GameAPI;
 import projekt.icons.Airfield;
 import projekt.icons.Fabrik;
@@ -56,6 +57,8 @@ public class AddFactory extends Actor {
                     getWorld().addObject(new Fabrik(), GameAPI.placementX, GameAPI.placementY);
                     selectedThis = false;
                     GameAPI.isFriendlyTerritory = false;
+                    Data.productionPotency++;
+                    Data.productionPoints = Data.productionPoints - 5000;
                 } else if (GameAPI.outOfBounds) {
                     selectedThis = false;
                     GameAPI.outOfBounds = false;
