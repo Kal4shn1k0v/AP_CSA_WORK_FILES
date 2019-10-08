@@ -166,7 +166,61 @@ public class Spitfire extends Actor {
                 Greenfoot.delay(1);
                 this.setLocation(friendlyPositionX, friendlyPositionY);
             } else {
+                RandomMovement();
 
+                friendlyPositionX = RandomXDestination;
+                friendlyPositionY = RandomYDestination;
+                GameAPI.moveAnimation(1, this.getX(), this.getY(), friendlyPositionX, friendlyPositionY);
+                int X = friendlyPositionX - this.getX();
+                int Y = friendlyPositionY - this.getY();
+                if (X == 0 && Y > 0) {
+                    setRotation(GameAPI.actorAngle + 180);
+                }
+                if (X == 0 && Y < 0) {
+                    setRotation(GameAPI.actorAngle);
+                }
+                if (Y == 0 && X > 0) {
+                    setRotation(GameAPI.actorAngle + 0);
+                }
+                if (Y == 0 && X < 0) {
+                    setRotation(GameAPI.actorAngle + 180);
+                }
+                if (X > 0 && Y > 0) {
+                    setRotation(90 - GameAPI.actorAngle + 90);
+                }
+                if (X > 0 && Y < 0) {
+                    setRotation(GameAPI.actorAngle);
+                }
+                if (X < 0 && Y > 0) {
+                    setRotation(GameAPI.actorAngle + 180);
+                } if (X < 0 && Y < 0) {
+                    setRotation(90 - GameAPI.actorAngle + 270);
+                }
+                System.out.println(GameAPI.actorAngle);
+                GameAPI.actorAngle = 0;
+                int initialX = this.getX();
+                int initialY = this.getY();
+                GameAPI.moveAnimation(1, initialX, initialY, GameAPI.placementX, GameAPI.placementY);
+                this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                Greenfoot.delay(1);
+                GameAPI.moveAnimation(2, initialX, initialY, GameAPI.placementX, GameAPI.placementY);
+                this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                Greenfoot.delay(1);
+                GameAPI.moveAnimation(3, initialX, initialY, GameAPI.placementX, GameAPI.placementY);
+                this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                Greenfoot.delay(1);
+                GameAPI.moveAnimation(4, initialX, initialY, GameAPI.placementX, GameAPI.placementY);
+                this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                Greenfoot.delay(1);
+                GameAPI.moveAnimation(5, initialX, initialY, GameAPI.placementX, GameAPI.placementY);
+                this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                this.setLocation(GameAPI.intermediatePlacementX, GameAPI.intermediatePlacementY);
+                Greenfoot.delay(1);
+                this.setLocation(friendlyPositionX, friendlyPositionY);
             }
         } else {
 

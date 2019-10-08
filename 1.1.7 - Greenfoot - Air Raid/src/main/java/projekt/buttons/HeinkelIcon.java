@@ -4,6 +4,7 @@ import greenfoot.Actor;
 import greenfoot.Greenfoot;
 import greenfoot.GreenfootImage;
 import greenfoot.MouseInfo;
+import projekt.Data;
 import projekt.GameAPI;
 import projekt.actors.Heinkel274;
 import projekt.actors.Spitfire;
@@ -56,6 +57,7 @@ public class HeinkelIcon extends Actor {
                 GameAPI.airfieldPlacementControl(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
                 if (!GameAPI.outOfBounds && GameAPI.isAnAirfield) {
                     System.out.println("placement");
+                    Data.productionPoints = Data.productionPoints - 1500;
                     getWorld().addObject(new Heinkel274(), GameAPI.placementX, GameAPI.placementY);
                     selectedThis = false;
                     GameAPI.outOfBounds = false;

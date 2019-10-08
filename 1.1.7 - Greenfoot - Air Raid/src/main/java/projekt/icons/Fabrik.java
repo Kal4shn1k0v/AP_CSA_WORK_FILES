@@ -19,7 +19,7 @@ public class Fabrik extends Actor {
         temp2 = Greenfoot.getRandomNumber(2);
 
         if (temp2 == 2) {
-            Data.productionPoints = Data.productionPoints + 1;
+            Data.productionPoints = Data.productionPoints + 3;
         }
 
         if (temp1 == 1) {

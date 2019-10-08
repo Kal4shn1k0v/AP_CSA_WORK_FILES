@@ -4,6 +4,7 @@ import greenfoot.Actor;
 import greenfoot.Greenfoot;
 import greenfoot.GreenfootImage;
 import greenfoot.MouseInfo;
+import projekt.Data;
 import projekt.GameAPI;
 import projekt.actors.Messerschmitt109;
 import projekt.icons.Airfield;
@@ -52,6 +53,7 @@ public class MesserschmittIcon extends Actor {
                 GameAPI.GridToXY(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
                 GameAPI.airfieldPlacementControl(GameAPI.mouseClickXgridResult, GameAPI.mouseClickYgridResult);
                 if (!GameAPI.outOfBounds && GameAPI.isAnAirfield) {
+                    Data.productionPoints = Data.productionPoints - 1000;
                     System.out.println("placement");
                     getWorld().addObject(new Messerschmitt109(), GameAPI.placementX, GameAPI.placementY);
                     selectedThis = false;

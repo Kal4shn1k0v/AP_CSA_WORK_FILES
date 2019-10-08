@@ -56,15 +56,16 @@ public class MyWorld extends World {
     }
 
     private void addObjects() {
-        Greenfoot.setSpeed(35);
+        Greenfoot.setSpeed(45);
         addButtons();
         addVehicles();
         addScore();
         addObject(new AirfieldEnemy(), AirfieldEnemy.locationX, AirfieldEnemy.locationY);
         addObject(new Spitfire(), AirfieldEnemy.locationX, AirfieldEnemy.locationY);
         addObject(new Spitfire(), AirfieldEnemy.locationX, AirfieldEnemy.locationY);
-        //addObject(new Lancaster(), AirfieldEnemy.locationX, AirfieldEnemy.locationY);
-        //addObject(new Lancaster(), AirfieldEnemy.locationX, AirfieldEnemy.locationY);
+        addObject(new Spitfire(), AirfieldEnemy.locationX, AirfieldEnemy.locationY);
+        addObject(new Lancaster(), AirfieldEnemy.locationX, AirfieldEnemy.locationY);
+        addObject(new Lancaster(), AirfieldEnemy.locationX, AirfieldEnemy.locationY);
     }
 
     private void addButtons() {
