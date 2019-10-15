@@ -10,7 +10,7 @@ import greenfoot.World;
 public class MyWorld extends World {
 
     public MyWorld() {
-        super(1000, 1000, 1);
+        super(800, 340, 1);
         prepare();
     }
 
