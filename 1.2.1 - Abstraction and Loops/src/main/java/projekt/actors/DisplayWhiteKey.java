@@ -2,6 +2,8 @@ package projekt.actors;
 
 import greenfoot.*;
 
+import java.util.Arrays;
+
 public class DisplayWhiteKey extends Actor {
     private GreenfootImage textureInactive = new GreenfootImage("white-key.png");
     private GreenfootImage textureActive = new GreenfootImage("white-key-down.png");
@@ -11,23 +13,18 @@ public class DisplayWhiteKey extends Actor {
         getImage().scale(63, 280);
     }
 
-    private boolean isDown;
+    private boolean isDown = false;
 
     public void act() {
         if (!isDown && Greenfoot.isKeyDown("a") ) {
             setImage(textureActive);
             isDown = true;
+            PlaySound.playSound();
         } else if (isDown && !Greenfoot.isKeyDown("a") ) {
             setImage(textureInactive);
             isDown = false;
-        }
-
-        if (!isDown && Greenfoot.isKeyDown("s") ) {
-            //set image dark
-            isDown = true;
-        } else if (isDown && !Greenfoot.isKeyDown("s") ) {
-            //set image light
-            isDown = false;
+            PlaySound.playSound();
+            PlaySound.once = 1;
         }
     }
 }

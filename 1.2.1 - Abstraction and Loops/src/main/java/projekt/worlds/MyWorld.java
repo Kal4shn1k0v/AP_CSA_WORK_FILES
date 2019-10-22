@@ -13,7 +13,7 @@ public class MyWorld extends World {
     }
 
     public MyWorld() {
-        super(800, 340, 1);
+        super(819, 340, 1);
         prepare();
     }
 
@@ -30,8 +30,9 @@ public class MyWorld extends World {
         addObject(new DisplayWhiteKey(), 378, 126);
         addObject(new DisplayWhiteKey(), 441, 126);
         addObject(new DisplayWhiteKey(), 504, 126);
-        addObject(new DisplayWhiteKey(), 378, 126);
-        addObject(new DisplayWhiteKey(), 378, 126);
-        addObject(new DisplayWhiteKey(), 378, 126);
+        addObject(new DisplayWhiteKey(), 567, 126);
+        addObject(new DisplayWhiteKey(), 630, 126);
+        addObject(new DisplayWhiteKey(), 693, 126);
+        addObject(new DisplayWhiteKey(), 756, 126);
     }
 }
