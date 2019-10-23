@@ -16,7 +16,7 @@ public class DisplayWhiteKey extends Actor {
     private boolean isDown = false;
 
     public void act() {
-        if (!isDown && Greenfoot.isKeyDown("a") ) {
+/*        if (!isDown && Greenfoot.isKeyDown("a") ) {
             setImage(textureActive);
             isDown = true;
             PlaySound.playSound();
@@ -25,7 +25,7 @@ public class DisplayWhiteKey extends Actor {
             isDown = false;
             PlaySound.playSound();
             PlaySound.once = 1;
-        }
+        } */
     }
 }
 
