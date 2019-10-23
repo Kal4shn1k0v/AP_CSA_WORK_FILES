@@ -4,11 +4,11 @@ import greenfoot.*;
 
 import java.util.Arrays;
 
-public class DisplayWhiteKey extends Actor {
+public class WhiteKey extends Actor {
     private GreenfootImage textureInactive = new GreenfootImage("white-key.png");
     private GreenfootImage textureActive = new GreenfootImage("white-key-down.png");
 
-    public DisplayWhiteKey() {
+    public WhiteKey() {
         setImage(textureInactive);
         getImage().scale(63, 280);
     }

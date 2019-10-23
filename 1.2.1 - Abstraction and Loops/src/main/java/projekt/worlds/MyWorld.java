@@ -1,11 +1,12 @@
 package projekt.worlds;
 
-import greenfoot.Actor;
 import greenfoot.Greenfoot;
 import greenfoot.GreenfootImage;
 import greenfoot.World;
-import projekt.actors.DisplayWhiteKey;
-import projekt.actors.PlaySound;
+import projekt.actors.WhiteKey;
+import projekt.actors.Sound;
+
+import java.util.Arrays;
 
 public class MyWorld extends World {
     private GreenfootImage background = new GreenfootImage("wood.jpg");
@@ -14,30 +15,42 @@ public class MyWorld extends World {
 
     private boolean isDown = false;
 
-    DisplayWhiteKey cc = new DisplayWhiteKey();
+    WhiteKey cc = new WhiteKey();
+    WhiteKey cd = new WhiteKey();
+    WhiteKey ce = new WhiteKey();
+    WhiteKey cf = new WhiteKey();
+    WhiteKey cg = new WhiteKey();
+    WhiteKey ca = new WhiteKey();
+    WhiteKey cb = new WhiteKey();
+    WhiteKey dc = new WhiteKey();
+    WhiteKey dd = new WhiteKey();
+    WhiteKey de = new WhiteKey();
+    WhiteKey df = new WhiteKey();
+    WhiteKey dg = new WhiteKey();
 
     public void act() {
         this.setBackground(background);
 
         String currentKey = Greenfoot.getKey();
-        //System.out.println(currentKey);
+        boolean temp = Arrays.stream(Sound.whiteKeys).anyMatch("n"::equals);
 
         if (currentKey != null) {
-            if (!isDown && Greenfoot.isKeyDown(currentKey) ) {
-                cc.setImage(textureActive);
+            if (!isDown && Greenfoot.isKeyDown(currentKey)) {
                 isDown = true;
-                PlaySound.playSound(currentKey);
-            } else if (isDown && !Greenfoot.isKeyDown(currentKey) ) {
-                cc.setImage(textureInactive);
+                display("bruh");
+                Sound.playSound(currentKey);
                 isDown = false;
-                PlaySound.playSound(currentKey);
-                PlaySound.once = 1;
+                Sound.whiteOnce = 1;
             }
+        } else {
+            cc.setImage(textureInactive);
         }
+    }
 
-        if (Greenfoot.isKeyDown(null)) {
-            System.out.println("mems");
-        }
+    private void display(String Keyname) {
+        cc.setImage(textureActive);
+        Greenfoot.delay(10);
+        cc.setImage(textureInactive);
     }
 
     public MyWorld() {
@@ -50,19 +63,17 @@ public class MyWorld extends World {
     }
 
     private void addObjects() {
-        //3c", "3d", "3e", "3f", "3g", "3a", "3b", "4c", "4d", "4e", "4f", "4g
-
         addObject(cc, 63, 126);
-        addObject(new DisplayWhiteKey(), 126, 126);
-        addObject(new DisplayWhiteKey(), 189, 126);
-        addObject(new DisplayWhiteKey(), 252, 126);
-        addObject(new DisplayWhiteKey(), 315, 126);
-        addObject(new DisplayWhiteKey(), 378, 126);
-        addObject(new DisplayWhiteKey(), 441, 126);
-        addObject(new DisplayWhiteKey(), 504, 126);
-        addObject(new DisplayWhiteKey(), 567, 126);
-        addObject(new DisplayWhiteKey(), 630, 126);
-        addObject(new DisplayWhiteKey(), 693, 126);
-        addObject(new DisplayWhiteKey(), 756, 126);
+        addObject(cd, 126, 126);
+        addObject(ce, 189, 126);
+        addObject(cf, 252, 126);
+        addObject(cg, 315, 126);
+        addObject(ca, 378, 126);
+        addObject(cb, 441, 126);
+        addObject(dc, 504, 126);
+        addObject(dd, 567, 126);
+        addObject(de, 630, 126);
+        addObject(df, 693, 126);
+        addObject(dg, 756, 126);
     }
 }
