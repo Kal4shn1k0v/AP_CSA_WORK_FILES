@@ -38,9 +38,16 @@ public class MyWorld extends World {
             if (!isDown && Greenfoot.isKeyDown(currentKey)) {
                 isDown = true;
                 display("bruh");
-                Sound.playSound(currentKey);
+                if (Arrays.asList(Sound.whiteKeys).contains(currentKey)) {
+                    Sound.playWhiteSound(currentKey);
+                    Sound.whiteOnce = 1;
+                    System.out.println("1");
+                } else if (Arrays.asList(Sound.blackKeys).contains(currentKey)) {
+                    Sound.playBlackSound(currentKey);
+                    Sound.blackOnce = 1;
+                    System.out.println("2");
+                }
                 isDown = false;
-                Sound.whiteOnce = 1;
             }
         } else {
             cc.setImage(textureInactive);
@@ -75,5 +82,7 @@ public class MyWorld extends World {
         addObject(de, 630, 126);
         addObject(df, 693, 126);
         addObject(dg, 756, 126);
+
+
     }
 }
