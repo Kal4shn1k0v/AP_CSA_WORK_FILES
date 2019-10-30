@@ -1,11 +1,4 @@
-package projekt.worlds;
-
-import greenfoot.Greenfoot;
-import greenfoot.GreenfootImage;
-import greenfoot.World;
-import projekt.actors.BlackKey;
-import projekt.actors.WhiteKey;
-import projekt.actors.Sound;
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 import java.util.Arrays;
 
@@ -21,18 +14,18 @@ public class MyWorld extends World {
 
     private boolean isDown = false;
 
-    WhiteKey cc = new WhiteKey(whiteIndex[0]);
-    WhiteKey cd = new WhiteKey(whiteIndex[1]);
-    WhiteKey ce = new WhiteKey(whiteIndex[2]);
-    WhiteKey cf = new WhiteKey(whiteIndex[3]);
-    WhiteKey cg = new WhiteKey(whiteIndex[4]);
-    WhiteKey ca = new WhiteKey(whiteIndex[5]);
-    WhiteKey cb = new WhiteKey(whiteIndex[6]);
-    WhiteKey dc = new WhiteKey(whiteIndex[7]);
-    WhiteKey dd = new WhiteKey(whiteIndex[7]);
-    WhiteKey de = new WhiteKey(whiteIndex[9]);
-    WhiteKey df = new WhiteKey(whiteIndex[10]);
-    WhiteKey dg = new WhiteKey(whiteIndex[11]);
+    WhiteKey cc = new WhiteKey();
+    WhiteKey cd = new WhiteKey();
+    WhiteKey ce = new WhiteKey();
+    WhiteKey cf = new WhiteKey();
+    WhiteKey cg = new WhiteKey();
+    WhiteKey ca = new WhiteKey();
+    WhiteKey cb = new WhiteKey();
+    WhiteKey dc = new WhiteKey();
+    WhiteKey dd = new WhiteKey();
+    WhiteKey de = new WhiteKey();
+    WhiteKey df = new WhiteKey();
+    WhiteKey dg = new WhiteKey();
 
     BlackKey ccH = new BlackKey();
     BlackKey cdH = new BlackKey();

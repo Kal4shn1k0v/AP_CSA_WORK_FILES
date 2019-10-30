@@ -1,16 +1,5 @@
-package projekt.actors;
-
-import greenfoot.Actor;
-import greenfoot.Greenfoot;
-import greenfoot.GreenfootSound;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.Arrays;
-import java.util.List;
-
-import static jdk.internal.org.objectweb.asm.util.Printer.TYPES;
-
 public class Sound extends Actor {
     public static String[] whiteKeys = {"a", "s", "d", "f", "g", "h", "j", "k", "l",";","'","enter"};
     public static String[] whiteNotes = {"3c.wav", "3d.wav", "3e.wav", "3f.wav", "3g.wav", "3a.wav", "3b.wav", "4c.wav", "4d.wav", "4e.wav", "4f.wav", "4g.wav"};
