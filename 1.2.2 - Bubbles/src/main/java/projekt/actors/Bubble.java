@@ -1,4 +1,9 @@
-import java.awt.Color;
+package projekt.actors;
+
+import greenfoot.Actor;
+import greenfoot.Color;
+import greenfoot.Greenfoot;
+import greenfoot.GreenfootImage;
 
 public class Bubble extends Actor
 {

@@ -1,5 +1,6 @@
 package projekt.worlds;
 
+import greenfoot.Color;
 import greenfoot.Greenfoot;
 import greenfoot.GreenfootImage;
 import greenfoot.World;
