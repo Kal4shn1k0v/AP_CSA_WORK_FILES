@@ -2,7 +2,45 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 import java.util.Arrays;
 
-public class MyWorld extends World {
+public class MyWorld extends World
+{
+
+    
+    public MyWorld()
+    {    
+        super(819, 340, 1);
+        prepare();
+    }
+    
+    private void prepare() {
+        addObjects();
+    }
+    
+    private void addObjects() {
+        //Adds white keys
+        addObject(cc, 63, 126);
+        addObject(cd, 126, 126);
+        addObject(ce, 189, 126);
+        addObject(cf, 252, 126);
+        addObject(cg, 315, 126);
+        addObject(ca, 378, 126);
+        addObject(cb, 441, 126);
+        addObject(dc, 504, 126);
+        addObject(dd, 567, 126);
+        addObject(de, 630, 126);
+        addObject(df, 693, 126);
+        addObject(dg, 756, 126);
+
+        //Adds black keys
+        addObject(ccH, 96, 50);
+        addObject(cdH, 160, 50);
+        addObject(cfH, 284, 50);
+        addObject(cgH, 348, 50);
+        addObject(caH, 412, 50);
+        addObject(dcH, 537, 50);
+        addObject(ddH, 600, 50);
+    }
+    
     private GreenfootImage background = new GreenfootImage("wood.jpg");
     private GreenfootImage whiteTextureInactive = new GreenfootImage("white-key.png");
     private GreenfootImage whiteTextureActive = new GreenfootImage("white-key-down.png");
@@ -14,7 +52,7 @@ public class MyWorld extends World {
 
     private boolean isDown = false;
 
-    WhiteKey cc = new WhiteKey();
+   WhiteKey cc = new WhiteKey();
     WhiteKey cd = new WhiteKey();
     WhiteKey ce = new WhiteKey();
     WhiteKey cf = new WhiteKey();
@@ -146,39 +184,5 @@ public class MyWorld extends World {
                 ddH.setImage(blackTextureInactive);
             }
         }
-    }
-
-    public MyWorld() {
-        super(819, 340, 1);
-        prepare();
-    }
-
-    private void prepare() {
-        addObjects();
-    }
-
-    private void addObjects() {
-        //Adds white keys
-        addObject(cc, 63, 126);
-        addObject(cd, 126, 126);
-        addObject(ce, 189, 126);
-        addObject(cf, 252, 126);
-        addObject(cg, 315, 126);
-        addObject(ca, 378, 126);
-        addObject(cb, 441, 126);
-        addObject(dc, 504, 126);
-        addObject(dd, 567, 126);
-        addObject(de, 630, 126);
-        addObject(df, 693, 126);
-        addObject(dg, 756, 126);
-
-        //Adds black keys
-        addObject(ccH, 96, 50);
-        addObject(cdH, 160, 50);
-        addObject(cfH, 284, 50);
-        addObject(cgH, 348, 50);
-        addObject(caH, 412, 50);
-        addObject(dcH, 537, 50);
-        addObject(ddH, 600, 50);
     }
 }

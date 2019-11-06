@@ -1,12 +1,4 @@
-package projekt.worlds;
-
-import greenfoot.Color;
-import greenfoot.Greenfoot;
-import greenfoot.GreenfootImage;
-import greenfoot.World;
-import projekt.actors.Bubble;
-
-import java.util.Arrays;
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class MyWorld extends World {
 

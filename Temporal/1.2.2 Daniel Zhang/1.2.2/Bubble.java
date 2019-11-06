@@ -1,13 +1,17 @@
-package projekt.actors;
-
-import greenfoot.Actor;
-import greenfoot.Color;
-import greenfoot.Greenfoot;
-import greenfoot.GreenfootImage;
-import projekt.worlds.MyWorld;
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Bubble extends Actor {
     private int speed;
+    
+    /**
+     * Create a Bubble that floats, with given size and initial float direction.
+     */
+
+
+    public Bubble(int size, int direction) {
+        this(size);
+        setRotation(direction);
+    }
 
     public Bubble() {
         // create a random size, between 10 and 110 pixels
@@ -29,16 +33,6 @@ public class Bubble extends Actor {
 
         // random speed: 1 to 4
         speed = Greenfoot.getRandomNumber(4) + 1;
-    }
-
-    /**
-     * Create a Bubble that floats, with given size and initial float direction.
-     */
-
-
-    public Bubble(int size, int direction) {
-        this(size);
-        setRotation(direction);
     }
 
     public static void call() {

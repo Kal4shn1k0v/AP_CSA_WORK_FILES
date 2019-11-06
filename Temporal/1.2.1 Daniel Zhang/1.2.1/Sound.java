@@ -1,7 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.Arrays;
-public class Sound extends Actor {
-    public static String[] whiteKeys = {"a", "s", "d", "f", "g", "h", "j", "k", "l",";","'","enter"};
+
+public class Sound extends Actor
+{
+        public static String[] whiteKeys = {"a", "s", "d", "f", "g", "h", "j", "k", "l",";","'","enter"};
     public static String[] whiteNotes = {"3c.wav", "3d.wav", "3e.wav", "3f.wav", "3g.wav", "3a.wav", "3b.wav", "4c.wav", "4d.wav", "4e.wav", "4f.wav", "4g.wav"};
     public static String[] blackKeys = {"w","e","t","y","u","o","p"};
     public static String[] blackNotes = {"3c#.wav","3d#.wav","3f#.wav","3g#.wav","3a#.wav","4c#.wav","4d#.wav"};
