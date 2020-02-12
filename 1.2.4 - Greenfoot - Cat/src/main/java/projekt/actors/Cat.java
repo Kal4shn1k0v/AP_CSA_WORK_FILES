@@ -20,6 +20,7 @@ public class Cat extends Actor {
     }
 
     public Cat() {
+
     }
 
     public void walkLeft(int distance) {
@@ -47,91 +48,17 @@ public class Cat extends Actor {
         this.walkRight(8);
         Greenfoot.playSound("snoopy.wav");
         this.wait(10);
-        this.setImage("spin-1.png");
-        this.wait(6);
-        this.setImage("spin-2.png");
-        this.wait(6);
-        this.setImage("spin-3.png");
-        this.wait(6);
-        this.setImage("spin-3-piano.png");
-        this.wait(6);
-        this.setImage("spin-4-piano.png");
-        this.wait(6);
-        this.setImage("spin-5-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(3);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
+        for(int n = 1; n < 4; n++){
+            this.setImage("spin-" + n + ".png");
+            this.wait(6);
+        }
+        for(int n = 3; n < 6; n++){
+            this.setImage("spin-" + n + "-piano.png");
+            this.wait(6);
+        }
+        twoPlayMoves(8);
         Greenfoot.playSound("snoopy.wav");
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-3-piano.png");
-        this.wait(6);
-        this.setImage("cat-play-4B-piano.png");
-        this.wait(6);
+        twoPlayMoves(10);
         this.setImage("spin-5-piano.png");
         this.wait(6);
         this.setImage("spin-4-piano.png");
@@ -149,5 +76,19 @@ public class Cat extends Actor {
 
     public void wait(int time) {
         Greenfoot.delay(time);
+    }
+
+    public void twoPlayMoves(int howMany){
+        for (int n = 0; n < howMany; n++)
+        {
+            setImage("cat-play-3-piano.png");
+            wait(6);
+            setImage("cat-play-4B-piano.png");
+            wait(6);
+        }
+    }
+
+    public void spinAwayToPlay(){
+
     }
 }
