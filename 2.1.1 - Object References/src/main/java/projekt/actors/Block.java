@@ -1,49 +1,50 @@
 package projekt.actors;
 
-import greenfoot.*;
+import greenfoot.Actor;
+import greenfoot.Greenfoot;
+import greenfoot.GreenfootImage;
+import greenfoot.World;
+import projekt.DemoApp;
 
-public class Block extends Actor
-{
+public class Block extends Actor {
     private int delta = 2;
-    
-    /**
-     * Move across the screen, bounce off edges. Turn leaves, if we touch any.
-     */
-    public void act() 
-    {
+
+    int once = 0;
+
+    public void act() {
+        while(once == 0){
+            GreenfootImage myimage = new GreenfootImage("block-light.png");
+            setImage(myimage);
+            once ++;
+        }
         move();
         checkEdge();
         checkMouseClick();
+        checkLeaf();
     }
-    
-    /**
-     * Move sideways, either left or right.
-     */
-    private void move()
-    {
-        setLocation(getX()+delta, getY());
+
+    private void move() {
+        setLocation(getX() + delta, getY());
     }
-    
-    /**
-     * Check whether we are at the edge of the screen. If we are, turn around.
-     */
-    private void checkEdge()
-    {
-        if (isAtEdge()) 
-        {
+
+    private void checkEdge() {
+        if (isAtEdge()) {
             delta = -delta;  // reverse direction
+            World world = getWorld();
+            world.addObject(new Leaf(),this.getX(),this.getY());
         }
     }
-    
-    /**
-     * Check whether the mouse button was clicked. If it was, change all leaves.
-     */
-    private void checkMouseClick()
-    {
-        if (Greenfoot.mouseClicked(null)) 
-        {
+
+    private void checkMouseClick() {
+        if (Greenfoot.mouseClicked(null)) {
             // do this when the mouse is clicked. currently: nothing.
         }
     }
-    
+
+    private void checkLeaf(){
+        Leaf leaf = (Leaf)getOneIntersectingObject(Leaf.class);
+        if(leaf != null) {
+            Leaf.class.turn(DemoApp.getRandom(1, 360));
+        }
+    }
 }
