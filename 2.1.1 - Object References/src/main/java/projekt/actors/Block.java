@@ -8,19 +8,20 @@ import projekt.DemoApp;
 
 public class Block extends Actor {
     private int delta = 2;
-
-    int once = 0;
+    private int once = 0;
 
     public void act() {
-        while(once == 0){
+
+        while (once == 0) {
             GreenfootImage myimage = new GreenfootImage("block-light.png");
             setImage(myimage);
-            once ++;
+            once++;
         }
         move();
         checkEdge();
         checkMouseClick();
         checkLeaf();
+        checkPear();
     }
 
     private void move() {
@@ -31,7 +32,7 @@ public class Block extends Actor {
         if (isAtEdge()) {
             delta = -delta;  // reverse direction
             World world = getWorld();
-            world.addObject(new Leaf(),this.getX(),this.getY());
+            world.addObject(new Leaf(), this.getX(), this.getY());
         }
     }
 
@@ -41,10 +42,17 @@ public class Block extends Actor {
         }
     }
 
-    private void checkLeaf(){
-        Leaf leaf = (Leaf)getOneIntersectingObject(Leaf.class);
-        if(leaf != null) {
-            Leaf.class.turn(DemoApp.getRandom(1, 360));
+    private void checkLeaf() {
+        Leaf leaf = (Leaf) getOneIntersectingObject(Leaf.class);
+        if (leaf != null) {
+            leaf.turn(DemoApp.getRandom(-90, 90));
+        }
+    }
+
+    private void checkPear() {
+        Pear pear = (Pear) getOneIntersectingObject(Pear.class);
+        if (pear != null) {
+            pear.move(-pear.speed);
         }
     }
 }
