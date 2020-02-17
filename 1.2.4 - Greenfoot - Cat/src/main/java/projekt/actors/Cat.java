@@ -16,7 +16,8 @@ public class Cat extends Actor {
             temp1--;
         }
 
-
+        playPiano();
+        Greenfoot.stop();
     }
 
     public Cat() {
@@ -48,29 +49,19 @@ public class Cat extends Actor {
         this.walkRight(8);
         Greenfoot.playSound("snoopy.wav");
         this.wait(10);
-        for(int n = 1; n < 4; n++){
+        for(int n = 1; n < 6; n++){
             this.setImage("spin-" + n + ".png");
             this.wait(6);
-        }
-        for(int n = 3; n < 6; n++){
-            this.setImage("spin-" + n + "-piano.png");
-            this.wait(6);
+            spinAwayToPlay(true);
         }
         twoPlayMoves(8);
         Greenfoot.playSound("snoopy.wav");
         twoPlayMoves(10);
-        this.setImage("spin-5-piano.png");
-        this.wait(6);
-        this.setImage("spin-4-piano.png");
-        this.wait(6);
-        this.setImage("spin-3-piano.png");
-        this.wait(6);
-        this.setImage("spin-3.png");
-        this.wait(6);
-        this.setImage("spin-2.png");
-        this.wait(6);
-        this.setImage("spin-1.png");
-        this.wait(6);
+        for(int n = 6; n > 0; n--){
+            this.setImage("spin-" + n + ".png");
+            this.wait(6);
+            spinAwayToPlay(true);
+        }
         this.setImage("cat.png");
     }
 
@@ -79,16 +70,20 @@ public class Cat extends Actor {
     }
 
     public void twoPlayMoves(int howMany){
-        for (int n = 0; n < howMany; n++)
-        {
+        for (int n = 0; n < howMany; n++) {
             setImage("cat-play-3-piano.png");
             wait(6);
             setImage("cat-play-4B-piano.png");
             wait(6);
+            spinAwayToPlay(false);
         }
     }
 
-    public void spinAwayToPlay(){
-
+    public void spinAwayToPlay(boolean spin){
+        if(spin){
+            System.out.println("Its spinning!");
+        } else {
+            System.out.println("Its not spinning!");
+        }
     }
 }
