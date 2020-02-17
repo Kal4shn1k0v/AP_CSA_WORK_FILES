@@ -1,0 +1,28 @@
+Daniel Zhang
+Hunter Del Rosario
+Hunter
+Period 4
+
+CONCLUSION QUESTIONS 2.1.1
+
+1.  Describe the difference between a value and a reference. Give 2 examples (each) of when we might store a value in a variable and when we might store a reference.
+>   A value is a value that is stored in the current class and references are passed by value in another class.
+
+2.	Which of the following variables in this object are references and which are values?
+>   References: img1, img2, world, image
+>   Values: speed, x, y, rotation
+
+3.	What is a get method? What are two examples used in this assignment?
+>   A get method is a method implemented in Greenfoot that is used to the data in the target method.
+
+4.  When should you use .class? When shouldn’t you use .class?
+>   .class should be used only when referencing code in another class.
+
+5A. Which class is a client class of SomeClass? Which line of code tells you?
+>   OtherClass is the client class of SomeClass as there is a constructor referencing it.
+
+5b.	Which class is a parent class? Which line of code tells you?
+>   ThisClass is the parent class as when "x extends y" y is always the parent class.
+
+6.  What value of x is stored in myObject? What about thisObject? Why?
+>   myObject has a value of 1 while thisObject has a value of 2 because myObject remains to have a value of 1 while thisObject fetches the value of myObject and sets it to 2.

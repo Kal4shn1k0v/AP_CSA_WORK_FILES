@@ -10,13 +10,15 @@ public class Pear extends Actor {
     public static int speed;
     private int once = 0;
 
+    public Pear(){
+        speed = Greenfoot.getRandomNumber(3) + 1;
+    }
 
     public void act(){
         while(once == 0){
             GreenfootImage myimage = new GreenfootImage("pear.png");
             setImage(myimage);
             myimage.scale(40,40);
-            speed = Greenfoot.getRandomNumber(3) + 1;
             once ++;
         }
 
@@ -27,7 +29,11 @@ public class Pear extends Actor {
 
     private void checkEdge() {
         if (isAtEdge()) {
-            this.setLocation(0, this.getY());
+            if(speed > 0){
+                this.setLocation(0, this.getY());
+            } else if(speed < 0){
+                this.setLocation(600, this.getY());
+            }
         }
     }
 }

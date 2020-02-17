@@ -1,7 +1,7 @@
 Daniel Zhang 
 Period 4 
 
-CONLUSION QUESTIONS 1.1.5
+CONCLUSION QUESTIONS 1.1.5
 
 1A. What is variable scope? What is the main difference between an instance variable and a local scope variable?
 >   A variable scope is a section of the code where the variable is visible. Instance variables can be seen by all methods in the class while scope variables can be seen only where they are declared.

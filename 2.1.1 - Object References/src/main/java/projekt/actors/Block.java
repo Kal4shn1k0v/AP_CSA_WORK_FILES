@@ -52,7 +52,9 @@ public class Block extends Actor {
     private void checkPear() {
         Pear pear = (Pear) getOneIntersectingObject(Pear.class);
         if (pear != null) {
-            pear.move(-pear.speed);
+            Pear.speed = (-pear.speed);
+            System.out.print("asd");
+
         }
     }
 }
